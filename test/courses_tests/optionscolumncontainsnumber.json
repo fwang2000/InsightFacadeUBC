@@ -1,0 +1,18 @@
+{
+  "title": "columns array - contains number and valid string",
+  "query": {
+    "WHERE": {
+      "GT": {
+        "courses_avg": 97
+      }
+    },
+    "OPTIONS": {
+      "COLUMNS": [
+        "courses_dept",
+        10
+      ]
+    }
+  },
+  "isQueryValid": false,
+  "result": "InsightError"
+}

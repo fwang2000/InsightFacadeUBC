@@ -1,0 +1,26 @@
+{
+  "title": "invalid and query - one filter is not filter",
+  "query": {
+    "WHERE": {
+      "AND": [
+        {
+          "GT": {
+            "rooms_seats": 80
+          }
+        },
+        {
+          "SELECT": {
+            "rooms_fullname": "string"
+          }
+        }
+      ]
+    },
+    "OPTIONS": {
+      "COLUMNS": [
+        "rooms_furniture"
+      ]
+    }
+  },
+  "isQueryValid": false,
+  "result": "InsightError"
+}

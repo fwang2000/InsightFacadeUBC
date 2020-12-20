@@ -1,0 +1,19 @@
+{
+  "title": "rooms dataset querying course keys",
+  "query": {
+    "WHERE": {
+      "IS": {
+        "rooms_furniture": null
+      }
+    },
+    "OPTIONS": {
+      "COLUMNS": [
+        "rooms_lon",
+        "rooms_seats"
+      ],
+      "ORDER": "rooms_lon"
+    }
+  },
+  "isQueryValid": false,
+  "result": "InsightError"
+}

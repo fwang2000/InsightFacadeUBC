@@ -1,0 +1,26 @@
+{
+  "title": "Search by key and negation of key",
+    "query": {
+        "WHERE": {
+            "NOT": {
+                "GT": {
+                    "courses_avg": 2
+                }
+            }
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "courses_dept"
+            ]
+        }
+    },
+  "isQueryValid": true,
+    
+        "result": [
+            { "courses_dept": "frst" },
+            { "courses_dept": "lfs" },
+            { "courses_dept": "lfs" },
+            { "courses_dept": "wood" }
+        ]
+    
+}

@@ -1,0 +1,17 @@
+{
+  "title": "invalid - empty equal",
+  "query": {
+    "WHERE": {
+      "EQ": {
+
+      }
+    },
+    "OPTIONS": {
+      "COLUMNS": [
+        "rooms_seats"
+      ]
+    }
+  },
+  "isQueryValid": false,
+  "result": "InsightError"
+}

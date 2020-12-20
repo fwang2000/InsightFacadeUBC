@@ -1,0 +1,17 @@
+{
+  "title": "invalid options key - number",
+  "query": {
+    "WHERE": {
+      "GT": {
+        "courses_avg": 97
+      }
+    },
+    "OPTIONS": {
+      "COLUMNS": [
+        10
+      ]
+    }
+  },
+  "isQueryValid": false,
+  "result": "InsightError"
+}

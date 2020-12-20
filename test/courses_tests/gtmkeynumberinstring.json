@@ -1,0 +1,17 @@
+{
+  "title": "invalid query - gt mkey is in string",
+  "query": {
+    "WHERE": {
+      "GT": {
+        "courses_avg": "70"
+      }
+    },
+    "OPTIONS": {
+      "COLUMNS": [
+        "courses_dept"
+      ]
+    }
+  },
+  "isQueryValid": false,
+  "result": "InsightError"
+}

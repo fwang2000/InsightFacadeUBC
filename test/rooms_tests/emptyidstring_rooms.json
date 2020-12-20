@@ -1,0 +1,17 @@
+{
+  "title": "room empty idstring",
+  "query": {
+    "WHERE": {
+      "IS": {
+        "_seats": "*c"
+      }
+    },
+    "OPTIONS": {
+      "COLUMNS": [
+        "_address"
+      ]
+    }
+  },
+  "isQueryValid": false,
+  "result": "InsightError"
+}

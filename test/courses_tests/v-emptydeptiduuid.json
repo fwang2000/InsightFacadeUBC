@@ -1,0 +1,32 @@
+{
+  "title": "dept, id, uuid empty",
+    "query": {
+        "WHERE": {
+            "OR": [
+                {
+                    "IS": {
+                        "courses_dept": ""
+                    }
+                },
+                {
+                    "IS": {
+                        "courses_id": ""
+                    }
+                },
+                {
+                    "IS": {
+                        "courses_uuid": ""
+                    }
+                }
+            ]
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "courses_avg",
+                "courses_uuid"
+            ]
+        }
+    },
+    "isQueryValid": true,
+    "result": []
+}

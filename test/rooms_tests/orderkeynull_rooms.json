@@ -1,0 +1,20 @@
+{
+  "title": "Order Key - null",
+  "query": {
+    "WHERE": {
+      "GT": {
+        "rooms_seats": 97
+      }
+    },
+    "OPTIONS": {
+      "COLUMNS": [
+        "rooms_shortname",
+        "rooms_address"
+      ],
+      "ORDER": null
+    }
+  },
+  "isQueryValid": false,
+  "result": "InsightError"
+}
+

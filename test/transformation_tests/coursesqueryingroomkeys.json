@@ -1,0 +1,17 @@
+{
+  "title": "courses dataset querying room keys",
+  "query": {
+    "WHERE": {
+      "GT": {
+        "courses_seats": 97
+      }
+    },
+    "OPTIONS": {
+      "COLUMNS": [
+        "courses_furniture"
+      ]
+    }
+  },
+  "isQueryValid": false,
+  "result": "InsightError"
+}

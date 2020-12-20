@@ -1,0 +1,13 @@
+{
+  "title": "missing options",
+  "query": {
+    "WHERE": {
+      "IS": {
+        "courses_instructor": ""
+      }
+    }
+  },
+  "isQueryValid": false,
+  "result": "InsightError"
+}
+

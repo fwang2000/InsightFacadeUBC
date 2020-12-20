@@ -1,0 +1,37 @@
+{
+  "title": "Valid SUM Token",
+  "query": {
+    "WHERE": {
+      "GT": {
+        "rooms_seats": 10
+      }
+    },
+    "OPTIONS": {
+      "COLUMNS": [
+        "rooms_shortname",
+        "maxSeats"
+      ],
+      "ORDER": {
+        "dir": "UP",
+        "keys": [
+          "rooms_shortname",
+          "maxSeats"
+        ]
+      }
+    },
+    "TRANSFORMATIONS": {
+      "GROUP": [
+        "rooms_shortname"
+      ],
+      "APPLY": [
+        {
+          "maxSeats": {
+            "MAX": null
+          }
+        }
+      ]
+    }
+  },
+  "isQueryValid": false,
+  "result": "InsightError"
+}

@@ -1,0 +1,19 @@
+{
+  "title": "year not number",
+  "query": {
+    "WHERE": {
+      "GT": {
+        "courses_audit": "1989"
+      }
+    },
+    "OPTIONS": {
+      "COLUMNS": [
+        "courses_dept",
+        "courses_avg"
+      ],
+      "ORDER": "courses_avg"
+    }
+  },
+  "isQueryValid": false,
+  "result": "InsightError"
+}

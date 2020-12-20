@@ -1,0 +1,28 @@
+{
+  "title": "invalid query - multiple databases queried",
+  "query": {
+    "WHERE": {
+      "OR": [
+        {
+          "GT": {
+            "rooms_avg": 97
+          }
+        },
+        {
+          "IS": {
+            "courses_instructor": "a*"
+          }
+        }
+      ]
+    },
+    "OPTIONS": {
+      "COLUMNS": [
+        "courses_dept",
+        "courses_pass"
+      ],
+      "ORDER": "courses_pass"
+    }
+  },
+  "isQueryValid": false,
+  "result": "InsightError"
+}

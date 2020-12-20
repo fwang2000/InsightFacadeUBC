@@ -1,0 +1,28 @@
+{
+  "title": "invalid query - multiple databases queried",
+  "query": {
+    "WHERE": {
+      "OR": [
+        {
+          "GT": {
+            "rooms_seats": 97
+          }
+        },
+        {
+          "IS": {
+            "rooms_address": "a*"
+          }
+        }
+      ]
+    },
+    "OPTIONS": {
+      "COLUMNS": [
+        "courses_lat",
+        "courses_lon"
+      ],
+      "ORDER": "courses_lon"
+    }
+  },
+  "isQueryValid": false,
+  "result": "InsightError"
+}

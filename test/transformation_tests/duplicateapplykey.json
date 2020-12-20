@@ -1,0 +1,34 @@
+{
+  "title": "querying courses dataset, not rooms in group",
+  "query": {
+    "WHERE": {
+    },
+    "OPTIONS": {
+      "COLUMNS": [
+        "rooms_shortname",
+        "maxSeats"
+      ]
+    },
+    "TRANSFORMATIONS": {
+      "GROUP": [
+        "rooms_shortname",
+        "rooms_type"
+      ],
+      "APPLY": [
+        {
+          "maxSeats": {
+            "MAX": "rooms_seats"
+          }
+        },
+        {
+          "maxSeats": {
+            "MAX": "rooms_lat"
+          }
+        }
+      ]
+    }
+  },
+  "isQueryValid": false,
+  "result": "InsightError"
+
+}

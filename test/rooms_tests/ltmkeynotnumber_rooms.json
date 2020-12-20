@@ -1,0 +1,17 @@
+{
+  "title": "invalid query - lt mkey is spelled out",
+  "query": {
+    "WHERE": {
+      "LT": {
+        "rooms_seats": "ninety"
+      }
+    },
+    "OPTIONS": {
+      "COLUMNS": [
+        "rooms_lat"
+      ]
+    }
+  },
+  "isQueryValid": false,
+  "result": "InsightError"
+}

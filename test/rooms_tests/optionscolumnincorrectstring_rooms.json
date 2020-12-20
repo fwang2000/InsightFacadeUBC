@@ -1,0 +1,17 @@
+{
+  "title": "columns array misnamed string",
+  "query": {
+    "WHERE": {
+      "GT": {
+        "rooms_seats": 97
+      }
+    },
+    "OPTIONS": {
+      "NOT COLUMNS": [
+        "rooms_address"
+      ]
+    }
+  },
+  "isQueryValid": false,
+  "result": "InsightError"
+}

@@ -1,0 +1,57 @@
+{
+  "title": "Valid SUM Token",
+  "query": {
+    "WHERE": {
+      "AND": [
+        {
+          "IS": {
+            "rooms_shortname": "ALRD"
+          }
+        }
+      ]
+    },
+    "OPTIONS": {
+      "COLUMNS": [
+        "rooms_seats",
+        "sumLat"
+      ],
+      "ORDER": {
+        "dir": "UP",
+        "keys": [
+          "sumLat"
+        ]
+      }
+    },
+    "TRANSFORMATIONS": {
+      "GROUP": [
+        "rooms_seats"
+      ],
+      "APPLY": [
+        {
+          "sumLat": {
+            "SUM": "rooms_lat"
+          }
+        }
+      ]
+    }
+  },
+  "isQueryValid": true,
+    "result": [
+      {
+        "rooms_seats": 44,
+        "sumLat": 49.27
+      },
+      {
+        "rooms_seats": 50,
+        "sumLat": 49.27
+      },
+      {
+        "rooms_seats": 94,
+        "sumLat": 49.27
+      },
+      {
+        "rooms_seats": 20,
+        "sumLat": 98.54
+      }
+    ]
+}

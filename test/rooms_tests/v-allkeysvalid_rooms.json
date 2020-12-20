@@ -1,0 +1,750 @@
+{
+  "title": "test many valid",
+    "query": {
+        "WHERE": {
+            "OR": [
+                {
+                    "AND": [
+                        {
+                            "NOT": {
+                                "LT": {
+                                    "rooms_seats": 1
+                                }
+                            }
+                        },
+                        {
+                            "GT": {
+                                "rooms_lat": 49.265
+                            }
+                        },
+                        {
+                            "LT": {
+                                "rooms_lon": -123.25
+                            }
+                        }
+                    ]
+                },
+                {
+                    "AND": [
+                        {
+                            "IS": {
+                                "rooms_address": "2*"
+                            }
+                        },
+                        {
+                            "OR": [
+                                {
+                                    "IS": {
+                                        "rooms_shortname": "ANGU"
+                                    }
+                                },
+                                {
+                                    "IS": {
+                                        "rooms_fullname": "Neville Scarfe"
+                                    }
+                                },
+                                {
+                                    "IS": {
+                                        "rooms_name": "SOWK_324"
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "IS": {
+                                "rooms_furniture": "*Tables*"
+                            }
+                        },
+                        {
+                            "IS": {
+                                "rooms_type": "Small Group"
+                            }
+                        },
+                        {
+                            "OR": [
+                                {
+                                    "IS": {
+                                        "rooms_number": "*2*"
+                                    }
+                                },
+                                {
+                                    "IS": {
+                                        "rooms_href": "*A*"
+                                    }
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "rooms_shortname",
+                "rooms_address"
+            ],
+            "ORDER": "rooms_address"
+        }
+    },
+    "isQueryValid": true,
+
+        "result": [
+            {
+                "rooms_shortname": "ALRD",
+                "rooms_address": "1822 East Mall"
+            },
+            {
+                "rooms_shortname": "ALRD",
+                "rooms_address": "1822 East Mall"
+            },
+            {
+                "rooms_shortname": "ALRD",
+                "rooms_address": "1822 East Mall"
+            },
+            {
+                "rooms_shortname": "ALRD",
+                "rooms_address": "1822 East Mall"
+            },
+            {
+                "rooms_shortname": "ALRD",
+                "rooms_address": "1822 East Mall"
+            },
+            {
+                "rooms_shortname": "BUCH",
+                "rooms_address": "1866 Main Mall"
+            },
+            {
+                "rooms_shortname": "BUCH",
+                "rooms_address": "1866 Main Mall"
+            },
+            {
+                "rooms_shortname": "BUCH",
+                "rooms_address": "1866 Main Mall"
+            },
+            {
+                "rooms_shortname": "BUCH",
+                "rooms_address": "1866 Main Mall"
+            },
+            {
+                "rooms_shortname": "BUCH",
+                "rooms_address": "1866 Main Mall"
+            },
+            {
+                "rooms_shortname": "BUCH",
+                "rooms_address": "1866 Main Mall"
+            },
+            {
+                "rooms_shortname": "BUCH",
+                "rooms_address": "1866 Main Mall"
+            },
+            {
+                "rooms_shortname": "BUCH",
+                "rooms_address": "1866 Main Mall"
+            },
+            {
+                "rooms_shortname": "BUCH",
+                "rooms_address": "1866 Main Mall"
+            },
+            {
+                "rooms_shortname": "BUCH",
+                "rooms_address": "1866 Main Mall"
+            },
+            {
+                "rooms_shortname": "BUCH",
+                "rooms_address": "1866 Main Mall"
+            },
+            {
+                "rooms_shortname": "BUCH",
+                "rooms_address": "1866 Main Mall"
+            },
+            {
+                "rooms_shortname": "BUCH",
+                "rooms_address": "1866 Main Mall"
+            },
+            {
+                "rooms_shortname": "BUCH",
+                "rooms_address": "1866 Main Mall"
+            },
+            {
+                "rooms_shortname": "BUCH",
+                "rooms_address": "1866 Main Mall"
+            },
+            {
+                "rooms_shortname": "BUCH",
+                "rooms_address": "1866 Main Mall"
+            },
+            {
+                "rooms_shortname": "BUCH",
+                "rooms_address": "1866 Main Mall"
+            },
+            {
+                "rooms_shortname": "BUCH",
+                "rooms_address": "1866 Main Mall"
+            },
+            {
+                "rooms_shortname": "BUCH",
+                "rooms_address": "1866 Main Mall"
+            },
+            {
+                "rooms_shortname": "BUCH",
+                "rooms_address": "1866 Main Mall"
+            },
+            {
+                "rooms_shortname": "BUCH",
+                "rooms_address": "1866 Main Mall"
+            },
+            {
+                "rooms_shortname": "BUCH",
+                "rooms_address": "1866 Main Mall"
+            },
+            {
+                "rooms_shortname": "BUCH",
+                "rooms_address": "1866 Main Mall"
+            },
+            {
+                "rooms_shortname": "BUCH",
+                "rooms_address": "1866 Main Mall"
+            },
+            {
+                "rooms_shortname": "BUCH",
+                "rooms_address": "1866 Main Mall"
+            },
+            {
+                "rooms_shortname": "BUCH",
+                "rooms_address": "1866 Main Mall"
+            },
+            {
+                "rooms_shortname": "BUCH",
+                "rooms_address": "1866 Main Mall"
+            },
+            {
+                "rooms_shortname": "BUCH",
+                "rooms_address": "1866 Main Mall"
+            },
+            {
+                "rooms_shortname": "BUCH",
+                "rooms_address": "1866 Main Mall"
+            },
+            {
+                "rooms_shortname": "BUCH",
+                "rooms_address": "1866 Main Mall"
+            },
+            {
+                "rooms_shortname": "BUCH",
+                "rooms_address": "1866 Main Mall"
+            },
+            {
+                "rooms_shortname": "BUCH",
+                "rooms_address": "1866 Main Mall"
+            },
+            {
+                "rooms_shortname": "BUCH",
+                "rooms_address": "1866 Main Mall"
+            },
+            {
+                "rooms_shortname": "BUCH",
+                "rooms_address": "1866 Main Mall"
+            },
+            {
+                "rooms_shortname": "BUCH",
+                "rooms_address": "1866 Main Mall"
+            },
+            {
+                "rooms_shortname": "BUCH",
+                "rooms_address": "1866 Main Mall"
+            },
+            {
+                "rooms_shortname": "BUCH",
+                "rooms_address": "1866 Main Mall"
+            },
+            {
+                "rooms_shortname": "BUCH",
+                "rooms_address": "1866 Main Mall"
+            },
+            {
+                "rooms_shortname": "BUCH",
+                "rooms_address": "1866 Main Mall"
+            },
+            {
+                "rooms_shortname": "BUCH",
+                "rooms_address": "1866 Main Mall"
+            },
+            {
+                "rooms_shortname": "BUCH",
+                "rooms_address": "1866 Main Mall"
+            },
+            {
+                "rooms_shortname": "BUCH",
+                "rooms_address": "1866 Main Mall"
+            },
+            {
+                "rooms_shortname": "BUCH",
+                "rooms_address": "1866 Main Mall"
+            },
+            {
+                "rooms_shortname": "BUCH",
+                "rooms_address": "1866 Main Mall"
+            },
+            {
+                "rooms_shortname": "BUCH",
+                "rooms_address": "1866 Main Mall"
+            },
+            {
+                "rooms_shortname": "BUCH",
+                "rooms_address": "1866 Main Mall"
+            },
+            {
+                "rooms_shortname": "BUCH",
+                "rooms_address": "1866 Main Mall"
+            },
+            {
+                "rooms_shortname": "BUCH",
+                "rooms_address": "1866 Main Mall"
+            },
+            {
+                "rooms_shortname": "BUCH",
+                "rooms_address": "1866 Main Mall"
+            },
+            {
+                "rooms_shortname": "BUCH",
+                "rooms_address": "1866 Main Mall"
+            },
+            {
+                "rooms_shortname": "BUCH",
+                "rooms_address": "1866 Main Mall"
+            },
+            {
+                "rooms_shortname": "BUCH",
+                "rooms_address": "1866 Main Mall"
+            },
+            {
+                "rooms_shortname": "BUCH",
+                "rooms_address": "1866 Main Mall"
+            },
+            {
+                "rooms_shortname": "BUCH",
+                "rooms_address": "1866 Main Mall"
+            },
+            {
+                "rooms_shortname": "BUCH",
+                "rooms_address": "1866 Main Mall"
+            },
+            {
+                "rooms_shortname": "BUCH",
+                "rooms_address": "1866 Main Mall"
+            },
+            {
+                "rooms_shortname": "BUCH",
+                "rooms_address": "1866 Main Mall"
+            },
+            {
+                "rooms_shortname": "BUCH",
+                "rooms_address": "1866 Main Mall"
+            },
+            {
+                "rooms_shortname": "BUCH",
+                "rooms_address": "1866 Main Mall"
+            },
+            {
+                "rooms_shortname": "BUCH",
+                "rooms_address": "1866 Main Mall"
+            },
+            {
+                "rooms_shortname": "BUCH",
+                "rooms_address": "1866 Main Mall"
+            },
+            {
+                "rooms_shortname": "BRKX",
+                "rooms_address": "1874 East Mall"
+            },
+            {
+                "rooms_shortname": "BRKX",
+                "rooms_address": "1874 East Mall"
+            },
+            {
+                "rooms_shortname": "AUDX",
+                "rooms_address": "1924 West Mall"
+            },
+            {
+                "rooms_shortname": "AUDX",
+                "rooms_address": "1924 West Mall"
+            },
+            {
+                "rooms_shortname": "IBLC",
+                "rooms_address": "1961 East Mall V6T 1Z1"
+            },
+            {
+                "rooms_shortname": "IBLC",
+                "rooms_address": "1961 East Mall V6T 1Z1"
+            },
+            {
+                "rooms_shortname": "IBLC",
+                "rooms_address": "1961 East Mall V6T 1Z1"
+            },
+            {
+                "rooms_shortname": "IBLC",
+                "rooms_address": "1961 East Mall V6T 1Z1"
+            },
+            {
+                "rooms_shortname": "IBLC",
+                "rooms_address": "1961 East Mall V6T 1Z1"
+            },
+            {
+                "rooms_shortname": "IBLC",
+                "rooms_address": "1961 East Mall V6T 1Z1"
+            },
+            {
+                "rooms_shortname": "IBLC",
+                "rooms_address": "1961 East Mall V6T 1Z1"
+            },
+            {
+                "rooms_shortname": "IBLC",
+                "rooms_address": "1961 East Mall V6T 1Z1"
+            },
+            {
+                "rooms_shortname": "IBLC",
+                "rooms_address": "1961 East Mall V6T 1Z1"
+            },
+            {
+                "rooms_shortname": "IBLC",
+                "rooms_address": "1961 East Mall V6T 1Z1"
+            },
+            {
+                "rooms_shortname": "IBLC",
+                "rooms_address": "1961 East Mall V6T 1Z1"
+            },
+            {
+                "rooms_shortname": "IBLC",
+                "rooms_address": "1961 East Mall V6T 1Z1"
+            },
+            {
+                "rooms_shortname": "IBLC",
+                "rooms_address": "1961 East Mall V6T 1Z1"
+            },
+            {
+                "rooms_shortname": "IBLC",
+                "rooms_address": "1961 East Mall V6T 1Z1"
+            },
+            {
+                "rooms_shortname": "IBLC",
+                "rooms_address": "1961 East Mall V6T 1Z1"
+            },
+            {
+                "rooms_shortname": "IBLC",
+                "rooms_address": "1961 East Mall V6T 1Z1"
+            },
+            {
+                "rooms_shortname": "IBLC",
+                "rooms_address": "1961 East Mall V6T 1Z1"
+            },
+            {
+                "rooms_shortname": "IBLC",
+                "rooms_address": "1961 East Mall V6T 1Z1"
+            },
+            {
+                "rooms_shortname": "MATH",
+                "rooms_address": "1984 Mathematics Road"
+            },
+            {
+                "rooms_shortname": "MATH",
+                "rooms_address": "1984 Mathematics Road"
+            },
+            {
+                "rooms_shortname": "MATH",
+                "rooms_address": "1984 Mathematics Road"
+            },
+            {
+                "rooms_shortname": "MATH",
+                "rooms_address": "1984 Mathematics Road"
+            },
+            {
+                "rooms_shortname": "MATH",
+                "rooms_address": "1984 Mathematics Road"
+            },
+            {
+                "rooms_shortname": "MATH",
+                "rooms_address": "1984 Mathematics Road"
+            },
+            {
+                "rooms_shortname": "MATH",
+                "rooms_address": "1984 Mathematics Road"
+            },
+            {
+                "rooms_shortname": "MATH",
+                "rooms_address": "1984 Mathematics Road"
+            },
+            {
+                "rooms_shortname": "GEOG",
+                "rooms_address": "1984 West Mall"
+            },
+            {
+                "rooms_shortname": "GEOG",
+                "rooms_address": "1984 West Mall"
+            },
+            {
+                "rooms_shortname": "GEOG",
+                "rooms_address": "1984 West Mall"
+            },
+            {
+                "rooms_shortname": "GEOG",
+                "rooms_address": "1984 West Mall"
+            },
+            {
+                "rooms_shortname": "GEOG",
+                "rooms_address": "1984 West Mall"
+            },
+            {
+                "rooms_shortname": "GEOG",
+                "rooms_address": "1984 West Mall"
+            },
+            {
+                "rooms_shortname": "GEOG",
+                "rooms_address": "1984 West Mall"
+            },
+            {
+                "rooms_shortname": "GEOG",
+                "rooms_address": "1984 West Mall"
+            },
+            {
+                "rooms_shortname": "MATX",
+                "rooms_address": "1986 Mathematics Road"
+            },
+            {
+                "rooms_shortname": "CHEM",
+                "rooms_address": "2036 Main Mall"
+            },
+            {
+                "rooms_shortname": "CHEM",
+                "rooms_address": "2036 Main Mall"
+            },
+            {
+                "rooms_shortname": "CHEM",
+                "rooms_address": "2036 Main Mall"
+            },
+            {
+                "rooms_shortname": "CHEM",
+                "rooms_address": "2036 Main Mall"
+            },
+            {
+                "rooms_shortname": "CHEM",
+                "rooms_address": "2036 Main Mall"
+            },
+            {
+                "rooms_shortname": "CHEM",
+                "rooms_address": "2036 Main Mall"
+            },
+            {
+                "rooms_shortname": "HEBB",
+                "rooms_address": "2045 East Mall"
+            },
+            {
+                "rooms_shortname": "HEBB",
+                "rooms_address": "2045 East Mall"
+            },
+            {
+                "rooms_shortname": "HEBB",
+                "rooms_address": "2045 East Mall"
+            },
+            {
+                "rooms_shortname": "HEBB",
+                "rooms_address": "2045 East Mall"
+            },
+            {
+                "rooms_shortname": "ANGU",
+                "rooms_address": "2053 Main Mall"
+            },
+            {
+                "rooms_shortname": "ANGU",
+                "rooms_address": "2053 Main Mall"
+            },
+            {
+                "rooms_shortname": "ANGU",
+                "rooms_address": "2053 Main Mall"
+            },
+            {
+                "rooms_shortname": "ANGU",
+                "rooms_address": "2053 Main Mall"
+            },
+            {
+                "rooms_shortname": "SOWK",
+                "rooms_address": "2080 West Mall"
+            },
+            {
+                "rooms_shortname": "SCRF",
+                "rooms_address": "2125 Main Mall"
+            },
+            {
+                "rooms_shortname": "SCRF",
+                "rooms_address": "2125 Main Mall"
+            },
+            {
+                "rooms_shortname": "SCRF",
+                "rooms_address": "2125 Main Mall"
+            },
+            {
+                "rooms_shortname": "SCRF",
+                "rooms_address": "2125 Main Mall"
+            },
+            {
+                "rooms_shortname": "SCRF",
+                "rooms_address": "2125 Main Mall"
+            },
+            {
+                "rooms_shortname": "SCRF",
+                "rooms_address": "2125 Main Mall"
+            },
+            {
+                "rooms_shortname": "SCRF",
+                "rooms_address": "2125 Main Mall"
+            },
+            {
+                "rooms_shortname": "SCRF",
+                "rooms_address": "2125 Main Mall"
+            },
+            {
+                "rooms_shortname": "SCRF",
+                "rooms_address": "2125 Main Mall"
+            },
+            {
+                "rooms_shortname": "SCRF",
+                "rooms_address": "2125 Main Mall"
+            },
+            {
+                "rooms_shortname": "SCRF",
+                "rooms_address": "2125 Main Mall"
+            },
+            {
+                "rooms_shortname": "SCRF",
+                "rooms_address": "2125 Main Mall"
+            },
+            {
+                "rooms_shortname": "SCRF",
+                "rooms_address": "2125 Main Mall"
+            },
+            {
+                "rooms_shortname": "SCRF",
+                "rooms_address": "2125 Main Mall"
+            },
+            {
+                "rooms_shortname": "SCRF",
+                "rooms_address": "2125 Main Mall"
+            },
+            {
+                "rooms_shortname": "SCRF",
+                "rooms_address": "2125 Main Mall"
+            },
+            {
+                "rooms_shortname": "SCRF",
+                "rooms_address": "2125 Main Mall"
+            },
+            {
+                "rooms_shortname": "SCRF",
+                "rooms_address": "2125 Main Mall"
+            },
+            {
+                "rooms_shortname": "IONA",
+                "rooms_address": "6000 Iona Drive"
+            },
+            {
+                "rooms_shortname": "IONA",
+                "rooms_address": "6000 Iona Drive"
+            },
+            {
+                "rooms_shortname": "HENN",
+                "rooms_address": "6224 Agricultural Road"
+            },
+            {
+                "rooms_shortname": "HENN",
+                "rooms_address": "6224 Agricultural Road"
+            },
+            {
+                "rooms_shortname": "HENN",
+                "rooms_address": "6224 Agricultural Road"
+            },
+            {
+                "rooms_shortname": "HENN",
+                "rooms_address": "6224 Agricultural Road"
+            },
+            {
+                "rooms_shortname": "HENN",
+                "rooms_address": "6224 Agricultural Road"
+            },
+            {
+                "rooms_shortname": "HENN",
+                "rooms_address": "6224 Agricultural Road"
+            },
+            {
+                "rooms_shortname": "ANSO",
+                "rooms_address": "6303 North West Marine Drive"
+            },
+            {
+                "rooms_shortname": "ANSO",
+                "rooms_address": "6303 North West Marine Drive"
+            },
+            {
+                "rooms_shortname": "ANSO",
+                "rooms_address": "6303 North West Marine Drive"
+            },
+            {
+                "rooms_shortname": "ANSO",
+                "rooms_address": "6303 North West Marine Drive"
+            },
+            {
+                "rooms_shortname": "UCLL",
+                "rooms_address": "6331 Crescent Road V6T 1Z1"
+            },
+            {
+                "rooms_shortname": "UCLL",
+                "rooms_address": "6331 Crescent Road V6T 1Z1"
+            },
+            {
+                "rooms_shortname": "UCLL",
+                "rooms_address": "6331 Crescent Road V6T 1Z1"
+            },
+            {
+                "rooms_shortname": "UCLL",
+                "rooms_address": "6331 Crescent Road V6T 1Z1"
+            },
+            {
+                "rooms_shortname": "LASR",
+                "rooms_address": "6333 Memorial Road"
+            },
+            {
+                "rooms_shortname": "LASR",
+                "rooms_address": "6333 Memorial Road"
+            },
+            {
+                "rooms_shortname": "LASR",
+                "rooms_address": "6333 Memorial Road"
+            },
+            {
+                "rooms_shortname": "LASR",
+                "rooms_address": "6333 Memorial Road"
+            },
+            {
+                "rooms_shortname": "LASR",
+                "rooms_address": "6333 Memorial Road"
+            },
+            {
+                "rooms_shortname": "LASR",
+                "rooms_address": "6333 Memorial Road"
+            },
+            {
+                "rooms_shortname": "LSK",
+                "rooms_address": "6356 Agricultural Road"
+            },
+            {
+                "rooms_shortname": "LSK",
+                "rooms_address": "6356 Agricultural Road"
+            },
+            {
+                "rooms_shortname": "LSK",
+                "rooms_address": "6356 Agricultural Road"
+            },
+            {
+                "rooms_shortname": "LSK",
+                "rooms_address": "6356 Agricultural Road"
+            }
+        ]
+    
+}

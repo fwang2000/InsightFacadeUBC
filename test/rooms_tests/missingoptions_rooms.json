@@ -1,0 +1,13 @@
+{
+  "title": "missing options",
+  "query": {
+    "WHERE": {
+      "IS": {
+        "rooms_seats": ""
+      }
+    }
+  },
+  "isQueryValid": false,
+  "result": "InsightError"
+}
+

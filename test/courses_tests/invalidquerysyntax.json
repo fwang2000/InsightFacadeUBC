@@ -1,0 +1,6 @@
+{
+    "title": "invalid query - incorrect query syntax",
+    "query": { "this syntax is bad": {} },
+    "isQueryValid": false,
+    "result": "InsightError"
+}

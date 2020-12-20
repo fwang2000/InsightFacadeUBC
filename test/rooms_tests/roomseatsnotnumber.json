@@ -1,0 +1,17 @@
+{
+  "title": "seats not number",
+  "query": {
+    "WHERE": {
+      "GT": {
+        "rooms_seats": "0"
+      }
+    },
+    "OPTIONS": {
+      "COLUMNS": [
+        "rooms_furniture"
+      ]
+    }
+  },
+  "isQueryValid": false,
+  "result": "InsightError"
+}

@@ -1,0 +1,17 @@
+{
+  "title": "invalid - empty not",
+  "query": {
+    "WHERE": {
+        "NOT": {
+
+        }
+    },
+    "OPTIONS": {
+        "COLUMNS": [
+            "rooms_seats"
+        ]
+    }
+  },
+  "isQueryValid": false,
+  "result": "InsightError"
+}

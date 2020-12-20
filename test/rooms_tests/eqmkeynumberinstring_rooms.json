@@ -1,0 +1,17 @@
+{
+  "title": "invalid query - eq mkey is in string",
+  "query": {
+    "WHERE": {
+      "EQ": {
+        "rooms_seats": "50"
+      }
+    },
+    "OPTIONS": {
+      "COLUMNS": [
+        "rooms_address"
+      ]
+    }
+  },
+  "isQueryValid": false,
+  "result": "InsightError"
+}

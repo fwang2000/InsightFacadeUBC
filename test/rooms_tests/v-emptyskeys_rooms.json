@@ -1,0 +1,56 @@
+{
+  "title": "fullname empty",
+  "query": {
+      "WHERE": {
+          "OR": [
+              {
+                  "IS": {
+                      "rooms_fullname": ""
+                  }
+              },
+              {
+                  "IS": {
+                      "rooms_shortname": ""
+                  }
+              },
+              {
+                  "IS": {
+                      "rooms_number": ""
+                  }
+              },
+              {
+                  "IS": {
+                      "rooms_address": ""
+                  }
+              },
+              {
+                  "IS": {
+                      "rooms_type": ""
+                  }
+              },
+              {
+                  "IS": {
+                      "rooms_furniture": ""
+                  }
+              },
+              {
+                  "IS": {
+                      "rooms_href": ""
+                  }
+              },
+              {
+                  "IS": {
+                      "rooms_name": ""
+                  }
+              }
+          ]
+      },
+      "OPTIONS": {
+          "COLUMNS": [
+              "rooms_address"
+          ]
+      }
+  },
+  "isQueryValid": true,
+  "result": [ { "rooms_address": "6333 Memorial Road" } ] 
+}

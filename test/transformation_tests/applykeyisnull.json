@@ -1,0 +1,42 @@
+{
+  "title": "group is not of type array",
+  "query": {
+    "WHERE": {
+      "AND": [
+        {
+          "IS": {
+            "rooms_furniture": "*Tables*"
+          }
+        },
+        {
+          "GT": {
+            "rooms_seats": 300
+          }
+        }
+      ]
+    },
+    "OPTIONS": {
+      "COLUMNS": [
+        "maxSeats",
+        "room_seats"
+      ],
+      "ORDER": {
+        "dir": "DOWN",
+        "keys": [
+          "maxSeats"
+        ]
+      }
+    },
+    "TRANSFORMATIONS": {
+      "GROUP": [ "room_seats" ],
+      "APPLY": [
+        {
+          "maxSeats": null
+        }
+      ]
+    }
+  },
+  "isQueryValid": false,
+  "result": "InsightError"
+
+}

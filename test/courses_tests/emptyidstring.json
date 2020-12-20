@@ -1,0 +1,18 @@
+{
+  "title": "empty idstring",
+  "query": {
+    "WHERE": {
+      "IS": {
+        "_title": "*c"
+      }
+    },
+    "OPTIONS": {
+      "COLUMNS": [
+        "_avg",
+        "_uuid"
+      ]
+    }
+  },
+  "isQueryValid": false,
+  "result": "InsightError"
+}

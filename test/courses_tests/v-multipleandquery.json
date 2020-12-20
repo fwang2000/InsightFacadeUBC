@@ -1,0 +1,41 @@
+{
+  "title": "multiple add query",
+  "query": {
+    "WHERE": {
+      "AND": [
+        {
+          "GT": {
+            "courses_avg": 80
+          }
+        },
+        {
+          "LT": {
+            "courses_avg": 90
+          }
+        },
+        {
+          "IS": {
+            "courses_instructor": "culham, thomas"
+          }
+        }
+      ]
+    },
+    "OPTIONS": {
+      "COLUMNS": [
+        "courses_dept"
+      ]
+    }
+  },
+  "isQueryValid": true,
+  "result": [
+    {
+      "courses_dept": "basc"
+    },
+    {
+      "courses_dept": "cohr"
+    },
+    {
+      "courses_dept": "comm"
+    }
+  ]
+}

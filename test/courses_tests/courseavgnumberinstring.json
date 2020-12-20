@@ -1,0 +1,17 @@
+{
+  "title": "invalid course average - number in string",
+  "query": {
+    "WHERE": {
+      "GT": {
+        "courses_avg": "80"
+      }
+    },
+    "OPTIONS": {
+      "COLUMNS": [
+        "courses_dept"
+      ]
+    }
+  },
+  "isQueryValid": false,
+  "result": "InsightError"
+}

@@ -1,0 +1,26 @@
+{
+  "title": "invalid or query - one filter empty",
+  "query": {
+    "WHERE": {
+      "OR": [
+        {
+          "GT": {
+            "rooms_seats": 80
+          }
+        },
+        {
+        }
+      ]
+    },
+    "OPTIONS": {
+      "COLUMNS": [
+        "rooms_name",
+        "rooms_address"
+      ],
+      "ORDER": "rooms_name"
+    }
+  },
+  "isQueryValid": false,
+  "result": "InsightError"
+}
+

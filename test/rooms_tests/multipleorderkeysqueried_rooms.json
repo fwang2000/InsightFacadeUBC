@@ -1,0 +1,19 @@
+{
+    "title": "Multiple order keys specified",
+    "query": {
+        "WHERE": {
+            "GT": {
+                "rooms_seats": 97
+            }
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "rooms_address",
+                "rooms_seats"
+            ],
+            "ORDER": [ "rooms_address", "rooms_seats" ]
+        }
+    },
+    "isQueryValid": false,
+    "result": "InsightError"
+}

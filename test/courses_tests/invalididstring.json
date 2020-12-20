@@ -1,0 +1,18 @@
+{
+  "title": "invalid idstring - contains _",
+  "query": {
+    "WHERE": {
+      "GT": {
+        "courses_0_avg": 97
+      }
+    },
+    "OPTIONS": {
+      "COLUMNS": [
+        "courses_0_title",
+        "courses_0_instructor"
+      ]
+    }
+  },
+  "isQueryValid": false,
+  "result": "InsightError"
+}

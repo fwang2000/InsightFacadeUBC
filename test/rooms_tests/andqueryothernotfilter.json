@@ -1,0 +1,28 @@
+{
+  "title": "invalid and query - one filter is not filter",
+  "query": {
+    "WHERE": {
+      "AND": [
+        {
+          "WHAT": {
+            "rooms_lat": 290
+          }
+        },
+        {
+          "IS": {
+            "rooms_furniture": "250"
+          }
+        }
+      ]
+    },
+    "OPTIONS": {
+      "COLUMNS": [
+        "rooms_lon",
+        "rooms_address"
+      ],
+      "ORDER": "rooms_address"
+    }
+  },
+  "isQueryValid": false,
+  "result": "InsightError"
+}

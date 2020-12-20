@@ -1,0 +1,54 @@
+{
+    "title": "complex room query",
+    "query": {
+        "WHERE": {
+            "OR": [
+                {
+                    "AND": [
+                        {
+                            "GT": {
+                                "rooms_seats": 50
+                            }
+                        },
+                        {
+                            "IS": {
+                                "rooms_shortname": "SWNG"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "GT": {
+                        "rooms_lat": 100
+                    }
+                }
+            ]
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "rooms_name",
+                "rooms_address"
+            ],
+            "ORDER": "rooms_name"
+        }
+    },
+    "isQueryValid": true,
+    "result": [
+        {
+            "rooms_name": "SWNG_121",
+            "rooms_address": "2175 West Mall V6T 1Z4"
+        },
+        {
+            "rooms_name": "SWNG_122",
+            "rooms_address": "2175 West Mall V6T 1Z4"
+        },
+        {
+            "rooms_name": "SWNG_221",
+            "rooms_address": "2175 West Mall V6T 1Z4"
+        },
+        {
+            "rooms_name": "SWNG_222",
+            "rooms_address": "2175 West Mall V6T 1Z4"
+        }
+    ]
+}

@@ -1,0 +1,28 @@
+{
+  "title": "Search by key and negation of key",
+  "query": {
+    "WHERE": {
+      "AND": [
+        {
+          "IS": {
+            "rooms_address": "epse"
+          }
+        },
+        {
+          "NOT": {
+            "IS": {
+              "rooms_address": "epse"
+            }
+          }
+        }
+      ]
+    },
+    "OPTIONS": {
+      "COLUMNS": [
+        "rooms_seats"
+      ]
+    }
+  },
+  "isQueryValid": true,
+  "result": []
+}

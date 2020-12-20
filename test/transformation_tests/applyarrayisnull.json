@@ -1,0 +1,40 @@
+{
+  "title": "apply array contains null value",
+  "query": {
+    "WHERE": {
+      "AND": [
+        {
+          "IS": {
+            "rooms_furniture": "*Tables*"
+          }
+        },
+        {
+          "GT": {
+            "rooms_seats": 300
+          }
+        }
+      ]
+    },
+    "OPTIONS": {
+      "COLUMNS": [
+        "rooms_shortname",
+        "maxSeats"
+      ],
+      "ORDER": {
+        "dir": "DOWN",
+        "keys": [
+          "maxSeats"
+        ]
+      }
+    },
+    "TRANSFORMATIONS": {
+      "GROUP": [ "rooms_fullname", "rooms_shortname" ],
+      "APPLY": [
+        null
+      ]
+    }
+  },
+  "isQueryValid": false,
+  "result": "InsightError"
+
+}

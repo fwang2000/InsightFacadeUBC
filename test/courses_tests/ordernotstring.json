@@ -1,0 +1,19 @@
+{
+  "title": "Order Key Not String",
+  "query": {
+    "WHERE": {
+      "GT": {
+        "courses_avg": 97
+      }
+    },
+    "OPTIONS": {
+      "COLUMNS": [
+        "courses_dept",
+        "courses_avg"
+      ],
+      "ORDER": 10
+    }
+  },
+  "isQueryValid": false,
+  "result": "InsightError"
+}

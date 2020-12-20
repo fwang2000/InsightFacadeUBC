@@ -1,0 +1,14 @@
+{
+  "title": "empty options clause",
+  "query": {
+    "WHERE": {
+      "GT": {
+
+        "courses_pass":  10
+      }
+    },
+    "OPTIONS": []
+  },
+  "isQueryValid": false,
+  "result": "InsightError"
+}

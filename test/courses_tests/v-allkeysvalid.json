@@ -1,0 +1,102 @@
+{
+  "title": "test many valid",
+  "query": {
+    "WHERE": {
+      "OR": [
+        {
+          "AND": [
+            {
+              "NOT": {
+                "LT": {
+
+                  "courses_avg": 79
+                }
+              }
+            },
+            {
+              "LT": {
+
+                "courses_pass": 100
+              }
+            },
+            {
+              "GT": {
+                "courses_fail": 2
+              }
+            },
+            {
+              "EQ": {
+                "courses_audit": 1
+              }
+            },
+            {
+              "GT": {
+                "courses_year": 1980
+              }
+            }
+          ]
+        },
+        {
+          "AND": [
+            {
+              "IS": {
+                "courses_dept": "anth"
+              }
+            },
+            {
+              "IS": {
+                "courses_id": "500"
+              }
+            },
+            {
+              "IS": {
+                "courses_instructor": "*b*"
+              }
+            },
+            {
+              "IS": {
+                "courses_title": "*i*"
+              }
+            },
+            {
+              "IS": {
+                "courses_uuid": "13235"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "OPTIONS": {
+      "COLUMNS": [
+        "courses_dept",
+        "courses_uuid"
+      ]
+    }
+  },
+  "isQueryValid": true,
+  
+    "result": [
+      {
+        "courses_dept": "anth",
+        "courses_uuid": "13235"
+      },
+      {
+        "courses_dept": "cpsc",
+        "courses_uuid": "56855"
+      },
+      {
+        "courses_dept": "hist",
+        "courses_uuid": "13626"
+      },
+      {
+        "courses_dept": "micb",
+        "courses_uuid": "80032"
+      },
+      {
+        "courses_dept": "phys",
+        "courses_uuid": "5960"
+      }
+    ]
+  
+}

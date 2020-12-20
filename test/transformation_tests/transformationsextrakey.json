@@ -1,0 +1,51 @@
+{
+  "title": "Transformation Extra Key",
+  "query": {
+    "WHERE": {
+      "OR": [
+        {
+
+          "IS": {
+            "rooms_furniture": "*Tables*"
+          }
+        },
+        {
+          "IS": {
+            "rooms_shortname": "ALRD"
+          }
+        }
+      ]
+    },
+    "OPTIONS": {
+      "COLUMNS": [
+        "rooms_shortname",
+        "countType"
+      ],
+      "ORDER": {
+        "dir": "UP",
+        "keys": [
+          "rooms_shortname",
+          "countType"
+        ]
+      }
+    },
+    "TRANSFORMATIONS": {
+      "GROUP": [
+        "rooms_shortname"
+      ],
+      "APPLY": [
+        {
+          "countType": {
+            "COUNT": "rooms_type"
+          }
+        }
+      ],
+      "COLUMNS": [
+        "rooms_shortname",
+        "countType"
+      ]
+    }
+  },
+  "isQueryValid": false,
+  "result": "InsightError"
+}

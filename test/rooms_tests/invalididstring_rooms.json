@@ -1,0 +1,18 @@
+{
+  "title": "invalid idstring - contains _",
+  "query": {
+    "WHERE": {
+      "GT": {
+        "rooms_0_seats": 97
+      }
+    },
+    "OPTIONS": {
+        "COLUMNS": [
+            "rooms_0_address",
+            "rooms_0_lat"
+        ]
+    }
+  },
+  "isQueryValid": false,
+  "result": "InsightError"
+}

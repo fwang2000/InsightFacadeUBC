@@ -1,0 +1,15 @@
+{
+    "title": "invalid query - dataset not added",
+    "query": {
+        "WHERE": {
+            "IS": {
+                "nonexistant_title": "apld complx anly"
+            }
+        },
+        "OPTIONS": {
+
+        }
+    },
+    "isQueryValid": false,
+    "result": "InsightError"
+}

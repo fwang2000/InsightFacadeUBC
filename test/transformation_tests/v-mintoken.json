@@ -1,0 +1,142 @@
+{
+  "title": "Valid MIN Token",
+  "query": {
+    "WHERE": {
+      "GT": {
+        "courses_pass": 500
+      }
+    },
+    "OPTIONS": {
+      "COLUMNS": [
+        "courses_dept",
+        "minAvg"
+      ],
+      "ORDER": {
+        "dir": "UP",
+        "keys": [
+          "minAvg"
+        ]
+      }
+    },
+    "TRANSFORMATIONS": {
+      "GROUP": [
+        "courses_dept"
+      ],
+      "APPLY": [
+        {
+          "minAvg": {
+            "MIN": "courses_avg"
+          }
+        }
+      ]
+    }
+  },
+  "isQueryValid": true,
+  
+    "result": [
+      {
+        "courses_dept": "math",
+        "minAvg": 60.66
+      },
+      {
+        "courses_dept": "chem",
+        "minAvg": 63.31
+      },
+      {
+        "courses_dept": "biol",
+        "minAvg": 64.73
+      },
+      {
+        "courses_dept": "phys",
+        "minAvg": 65.87
+      },
+      {
+        "courses_dept": "geob",
+        "minAvg": 66.04
+      },
+      {
+        "courses_dept": "psyc",
+        "minAvg": 66.5
+      },
+      {
+        "courses_dept": "econ",
+        "minAvg": 66.86
+      },
+      {
+        "courses_dept": "comm",
+        "minAvg": 67.06
+      },
+      {
+        "courses_dept": "apsc",
+        "minAvg": 67.23
+      },
+      {
+        "courses_dept": "caps",
+        "minAvg": 68.4
+      },
+      {
+        "courses_dept": "bioc",
+        "minAvg": 68.66
+      },
+      {
+        "courses_dept": "poli",
+        "minAvg": 69.24
+      },
+      {
+        "courses_dept": "phil",
+        "minAvg": 69.7
+      },
+      {
+        "courses_dept": "wrds",
+        "minAvg": 70.15
+      },
+      {
+        "courses_dept": "stat",
+        "minAvg": 70.39
+      },
+      {
+        "courses_dept": "eosc",
+        "minAvg": 70.61
+      },
+      {
+        "courses_dept": "span",
+        "minAvg": 70.86
+      },
+      {
+        "courses_dept": "cpsc",
+        "minAvg": 71.22
+      },
+      {
+        "courses_dept": "engl",
+        "minAvg": 71.49
+      },
+      {
+        "courses_dept": "fmst",
+        "minAvg": 71.76
+      },
+      {
+        "courses_dept": "ling",
+        "minAvg": 72.08
+      },
+      {
+        "courses_dept": "micb",
+        "minAvg": 72.43
+      },
+      {
+        "courses_dept": "clst",
+        "minAvg": 73.95
+      },
+      {
+        "courses_dept": "crwr",
+        "minAvg": 75.97
+      },
+      {
+        "courses_dept": "fnh",
+        "minAvg": 76.04
+      },
+      {
+        "courses_dept": "germ",
+        "minAvg": 78.54
+      }
+    ]
+}

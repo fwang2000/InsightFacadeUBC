@@ -1,0 +1,17 @@
+{
+  "title": "invalid - empty greater than",
+  "query": {
+    "WHERE": {
+      "GT": {
+
+      }
+    },
+    "OPTIONS": {
+        "COLUMNS": [
+            "rooms_seats"
+        ]
+    }
+  },
+  "isQueryValid": false,
+  "result": "InsightError"
+}

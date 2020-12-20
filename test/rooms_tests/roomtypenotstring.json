@@ -1,0 +1,17 @@
+{
+  "title": "type not string",
+  "query": {
+    "WHERE": {
+      "IS": {
+        "rooms_type": 10
+      }
+    },
+    "OPTIONS": {
+      "COLUMNS": [
+        "rooms_address"
+      ]
+    }
+  },
+  "isQueryValid": false,
+  "result": "InsightError"
+}

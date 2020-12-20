@@ -1,0 +1,202 @@
+{
+  "title": "Valid SUM Token",
+  "query": {
+    "WHERE": {
+    },
+    "OPTIONS": {
+      "COLUMNS": [
+        "rooms_lat",
+        "avgLon"
+      ],
+      "ORDER": {
+        "dir": "UP",
+        "keys": [
+          "avgLon"
+        ]
+      }
+    },
+    "TRANSFORMATIONS": {
+      "GROUP": [
+        "rooms_lat"
+      ],
+      "APPLY": [
+        {
+          "avgLon": {
+            "AVG": "rooms_lon"
+          }
+        }
+      ]
+    }
+  },
+  "isQueryValid": true,
+    "result": [
+      {
+        "rooms_lat": 49.26958,
+        "avgLon": -123.26
+      },
+      {
+        "rooms_lat": 49.2666,
+        "avgLon": -123.26
+      },
+      {
+        "rooms_lat": 49.26767,
+        "avgLon": -123.26
+      },
+      {
+        "rooms_lat": 49.26605,
+        "avgLon": -123.26
+      },
+      {
+        "rooms_lat": 49.2643,
+        "avgLon": -123.26
+      },
+      {
+        "rooms_lat": 49.26545,
+        "avgLon": -123.26
+      },
+      {
+        "rooms_lat": 49.266463,
+        "avgLon": -123.26
+      },
+      {
+        "rooms_lat": 49.264,
+        "avgLon": -123.26
+      },
+      {
+        "rooms_lat": 49.26867,
+        "avgLon": -123.26
+      },
+      {
+        "rooms_lat": 49.2699,
+        "avgLon": -123.25
+      },
+      {
+        "rooms_lat": 49.26372,
+        "avgLon": -123.25
+      },
+      {
+        "rooms_lat": 49.26479,
+        "avgLon": -123.25
+      },
+      {
+        "rooms_lat": 49.26862,
+        "avgLon": -123.25
+      },
+      {
+        "rooms_lat": 49.26826,
+        "avgLon": -123.25
+      },
+      {
+        "rooms_lat": 49.26207,
+        "avgLon": -123.25
+      },
+      {
+        "rooms_lat": 49.26228,
+        "avgLon": -123.25
+      },
+      {
+        "rooms_lat": 49.2659,
+        "avgLon": -123.25
+      },
+      {
+        "rooms_lat": 49.26273,
+        "avgLon": -123.25
+      },
+      {
+        "rooms_lat": 49.26274,
+        "avgLon": -123.25
+      },
+      {
+        "rooms_lat": 49.26414,
+        "avgLon": -123.25
+      },
+      {
+        "rooms_lat": 49.26044,
+        "avgLon": -123.25
+      },
+      {
+        "rooms_lat": 49.26176,
+        "avgLon": -123.25
+      },
+      {
+        "rooms_lat": 49.26541,
+        "avgLon": -123.25
+      },
+      {
+        "rooms_lat": 49.2661,
+        "avgLon": -123.25
+      },
+      {
+        "rooms_lat": 49.26627,
+        "avgLon": -123.25
+      },
+      {
+        "rooms_lat": 49.26486,
+        "avgLon": -123.25
+      },
+      {
+        "rooms_lat": 49.26125,
+        "avgLon": -123.25
+      },
+      {
+        "rooms_lat": 49.27106,
+        "avgLon": -123.25
+      },
+      {
+        "rooms_lat": 49.26766,
+        "avgLon": -123.25
+      },
+      {
+        "rooms_lat": 49.26114,
+        "avgLon": -123.25
+      },
+      {
+        "rooms_lat": 49.266089,
+        "avgLon": -123.25
+      },
+      {
+        "rooms_lat": 49.26398,
+        "avgLon": -123.25
+      },
+      {
+        "rooms_lat": 49.26048,
+        "avgLon": -123.25
+      },
+      {
+        "rooms_lat": 49.2642,
+        "avgLon": -123.25
+      },
+      {
+        "rooms_lat": 49.2683,
+        "avgLon": -123.25
+      },
+      {
+        "rooms_lat": 49.2663,
+        "avgLon": -123.25
+      },
+      {
+        "rooms_lat": 49.26517,
+        "avgLon": -123.25
+      },
+      {
+        "rooms_lat": 49.26293,
+        "avgLon": -123.25
+      },
+      {
+        "rooms_lat": 49.26478,
+        "avgLon": -123.25
+      },
+      {
+        "rooms_lat": 49.26236,
+        "avgLon": -123.24
+      },
+      {
+        "rooms_lat": 49.26229,
+        "avgLon": -123.24
+      },
+      {
+        "rooms_lat": 49.26047,
+        "avgLon": -123.24
+      }
+    ]
+}

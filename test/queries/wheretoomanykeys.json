@@ -1,0 +1,40 @@
+{
+  "title": "Valid SUM Token",
+  "query": {
+    "WHERE": {
+        "GT": {
+            "rooms_seats": 10
+        },
+        "IS": {
+            "rooms_furniture": "*"
+        }
+    },
+    "OPTIONS": {
+      "COLUMNS": [
+        "rooms_shortname",
+        "countType"
+      ],
+      "ORDER": {
+        "dir": "UP",
+        "keys": [
+          "rooms_shortname",
+          "countType"
+        ]
+      }
+    },
+    "TRANSFORMATIONS": {
+      "GROUP": [
+        "rooms_shortname"
+      ],
+      "APPLY": [
+        {
+          "countType": {
+            "COUNT": "rooms_seats"
+          }
+        }
+      ]
+    }
+  },
+  "isQueryValid": false,
+  "result": "InsightError"
+}

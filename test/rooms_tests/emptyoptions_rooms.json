@@ -1,0 +1,14 @@
+{
+  "title": "empty options clause",
+  "query": {
+    "WHERE": {
+      "GT": {
+
+        "rooms_lat":  50
+      }
+    },
+    "OPTIONS": []
+  },
+  "isQueryValid": false,
+  "result": "InsightError"
+}

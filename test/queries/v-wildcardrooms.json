@@ -1,0 +1,19 @@
+{
+  "title": "valid wildcard tests - multiple values between wildcards",
+    "query": {
+        "WHERE": {
+            "IS": {
+                "rooms_name": "*a*b*"
+            }
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "rooms_shortname",
+                "rooms_address"
+            ],
+            "ORDER": "rooms_shortname"
+        }
+    },
+  "isQueryValid": false,
+        "result": "InsightError"
+}

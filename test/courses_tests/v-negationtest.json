@@ -1,0 +1,28 @@
+{
+  "title": "Search by key and negation of key",
+  "query": {
+    "WHERE": {
+      "AND": [
+        {
+          "IS": {
+            "courses_dept": "epse"
+          }
+        },
+        {
+          "NOT": {
+            "IS": {
+              "courses_dept": "epse"
+            }
+          }
+        }
+      ]
+    },
+    "OPTIONS": {
+      "COLUMNS": [
+        "courses_dept"
+      ]
+    }
+  },
+  "isQueryValid": true,
+  "result": []
+}

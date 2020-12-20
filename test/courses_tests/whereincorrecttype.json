@@ -1,0 +1,15 @@
+{
+  "title": "where as an array",
+  "query": {
+    "WHERE": [],
+    "OPTIONS": [
+      {
+        "COLUMNS": [
+          "courses_dept"
+        ]
+      }
+    ]
+  },
+  "isQueryValid": false,
+  "result": "InsightError"
+}

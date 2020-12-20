@@ -1,0 +1,16 @@
+{
+    "title": "empty where",
+    "query": {
+        "WHERE": {},
+        "OPTIONS": {
+            "COLUMNS": [
+                "courses3_dept"
+            ]
+        }
+    },
+    "isQueryValid": true,
+    "result": [
+        { "courses3_dept": "aanb" },
+        { "courses3_dept": "aanb" }
+    ]
+}

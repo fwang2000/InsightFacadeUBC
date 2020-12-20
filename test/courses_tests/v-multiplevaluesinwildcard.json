@@ -1,0 +1,101 @@
+{
+  "title": "valid wildcard tests - multiple values between wildcards",
+  "query": {
+    "WHERE": {
+      "IS": {
+        "courses_title": "*oat*"
+      }
+    },
+    "OPTIONS": {
+      "COLUMNS": [
+        "courses_dept",
+        "courses_avg"
+      ],
+      "ORDER": "courses_dept"
+    }
+  },
+  "isQueryValid": true,
+
+    "result": [
+        {
+            "courses_dept": "mtrl",
+            "courses_avg": 77.77
+        },
+        {
+            "courses_dept": "mtrl",
+            "courses_avg": 77.77
+        },
+        {
+            "courses_dept": "mtrl",
+            "courses_avg": 75.76
+        },
+        {
+            "courses_dept": "mtrl",
+            "courses_avg": 75.76
+        },
+        {
+            "courses_dept": "mtrl",
+            "courses_avg": 73.29
+        },
+        {
+            "courses_dept": "mtrl",
+            "courses_avg": 73.29
+        },
+        {
+            "courses_dept": "mtrl",
+            "courses_avg": 75.97
+        },
+        {
+            "courses_dept": "mtrl",
+            "courses_avg": 75.97
+        },
+        {
+            "courses_dept": "mtrl",
+            "courses_avg": 75.64
+        },
+        {
+            "courses_dept": "mtrl",
+            "courses_avg": 75.64
+        },
+        {
+            "courses_dept": "mtrl",
+            "courses_avg": 76.11
+        },
+        {
+            "courses_dept": "mtrl",
+            "courses_avg": 76.11
+        },
+        {
+            "courses_dept": "mtrl",
+            "courses_avg": 77.44
+        },
+        {
+            "courses_dept": "mtrl",
+            "courses_avg": 77.44
+        },
+        {
+            "courses_dept": "mtrl",
+            "courses_avg": 74.1
+        },
+        {
+            "courses_dept": "mtrl",
+            "courses_avg": 74.1
+        },
+        {
+            "courses_dept": "mtrl",
+            "courses_avg": 72.62
+        },
+        {
+            "courses_dept": "mtrl",
+            "courses_avg": 72.62
+        },
+        {
+            "courses_dept": "wood",
+            "courses_avg": 77.45
+        },
+        {
+            "courses_dept": "wood",
+            "courses_avg": 77.45
+        }
+    ]
+}

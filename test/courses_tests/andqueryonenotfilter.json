@@ -1,0 +1,28 @@
+{
+  "title": "invalid and query - one filter is not filter",
+  "query": {
+    "WHERE": {
+      "AND": [
+        {
+          "GT": {
+            "courses_avg": 80
+          }
+        },
+        {
+          "SELECT": {
+            "courses_title":  "string"
+          }
+        }
+      ]
+    },
+    "OPTIONS": {
+      "COLUMNS": [
+        "courses_dept",
+        "courses_avg"
+      ],
+      "ORDER": "courses_avg"
+    }
+  },
+  "isQueryValid": false,
+  "result": "InsightError"
+}

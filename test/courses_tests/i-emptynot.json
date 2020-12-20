@@ -1,0 +1,17 @@
+{
+  "title": "invalid - empty not",
+  "query": {
+    "WHERE": {
+        "NOT": {
+
+        }
+    },
+    "OPTIONS": {
+      "COLUMNS": [
+        "courses_dept"
+      ]
+    }
+  },
+  "isQueryValid": false,
+  "result": "InsightError"
+}

@@ -1,0 +1,17 @@
+{
+  "title": "lat not number",
+  "query": {
+    "WHERE": {
+      "GT": {
+        "rooms_lat": "0"
+      }
+    },
+    "OPTIONS": {
+      "COLUMNS": [
+        "rooms_seats"
+      ]
+    }
+  },
+  "isQueryValid": false,
+  "result": "InsightError"
+}

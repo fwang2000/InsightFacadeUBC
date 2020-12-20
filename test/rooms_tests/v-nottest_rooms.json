@@ -1,0 +1,55 @@
+{
+  "title": "Search by key and negation of key",
+    "query": {
+        "WHERE": {
+            "NOT": {
+                "GT": {
+                    "rooms_lat": 49.2605
+                }
+            }
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "rooms_fullname"
+            ]
+        }
+    },
+  "isQueryValid": true,
+    "result": [
+        { "rooms_fullname": "Forest Sciences Centre" },
+        { "rooms_fullname": "Forest Sciences Centre" },
+        { "rooms_fullname": "Forest Sciences Centre" },
+        { "rooms_fullname": "Forest Sciences Centre" },
+        { "rooms_fullname": "Forest Sciences Centre" },
+        { "rooms_fullname": "Forest Sciences Centre" },
+        { "rooms_fullname": "Forest Sciences Centre" },
+        { "rooms_fullname": "Forest Sciences Centre" },
+        { "rooms_fullname": "Forest Sciences Centre" },
+        { "rooms_fullname": "Forest Sciences Centre" },
+        { "rooms_fullname": "Orchard Commons" },
+        { "rooms_fullname": "Orchard Commons" },
+        { "rooms_fullname": "Orchard Commons" },
+        { "rooms_fullname": "Orchard Commons" },
+        { "rooms_fullname": "Orchard Commons" },
+        { "rooms_fullname": "Orchard Commons" },
+        { "rooms_fullname": "Orchard Commons" },
+        { "rooms_fullname": "Orchard Commons" },
+        { "rooms_fullname": "Orchard Commons" },
+        { "rooms_fullname": "Orchard Commons" },
+        { "rooms_fullname": "Orchard Commons" },
+        { "rooms_fullname": "Orchard Commons" },
+        { "rooms_fullname": "Orchard Commons" },
+        { "rooms_fullname": "Orchard Commons" },
+        { "rooms_fullname": "Orchard Commons" },
+        { "rooms_fullname": "Orchard Commons" },
+        { "rooms_fullname": "Orchard Commons" },
+        { "rooms_fullname": "Orchard Commons" },
+        { "rooms_fullname": "Orchard Commons" },
+        { "rooms_fullname": "Orchard Commons" },
+        { "rooms_fullname": "Orchard Commons" },
+        { "rooms_fullname": "Robert F. Osborne Centre" },
+        { "rooms_fullname": "Robert F. Osborne Centre" },
+        { "rooms_fullname": "Robert F. Osborne Centre" }
+    ]
+    
+}

@@ -1,0 +1,17 @@
+{
+  "title": "invalid course year - number in string",
+  "query": {
+    "WHERE": {
+      "EQ": {
+        "courses_fail": "1990"
+      }
+    },
+    "OPTIONS": {
+      "COLUMNS": [
+        "courses_dept"
+      ]
+    }
+  },
+  "isQueryValid": false,
+  "result": "InsightError"
+}

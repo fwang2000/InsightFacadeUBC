@@ -1,0 +1,13 @@
+{
+  "title": "missing options",
+  "query": {
+    "OPTIONS": {
+      "COLUMNS": [
+        "rooms_seats"
+      ]
+    }
+  },
+  "isQueryValid": false,
+  "result": "InsightError"
+}
+

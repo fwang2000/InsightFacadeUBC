@@ -1,0 +1,232 @@
+{
+    "query1":{"WHERE": {"IS": {"courses_dept": "cpsc"} }, "OPTIONS": {"COLUMNS": ["courses_dept", "courses_id"], "ORDER": "courses_id"} },
+    "usingAllPartsOfForm": {
+        "WHERE": {
+            "AND": [
+                {
+                    "NOT": {
+                        "EQ": {
+                            "rooms_seats": 150
+                        }
+                    }
+                },
+                {
+                    "EQ": {
+                        "rooms_seats": 100
+                    }
+                }
+            ]
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "rooms_address",
+                "rooms_fullname",
+                "rooms_furniture",
+                "rooms_href",
+                "rooms_number",
+                "countAddress"
+            ],
+            "ORDER": {
+                "dir": "UP",
+                "keys": [
+                    "rooms_number"
+                ]
+            }
+        },
+        "TRANSFORMATIONS": {
+            "GROUP": [
+                "rooms_address",
+                "rooms_fullname",
+                "rooms_furniture",
+                "rooms_href",
+                "rooms_number"
+            ],
+            "APPLY": [
+                {
+                    "countAddress": {
+                        "COUNT": "rooms_seats"
+                    }
+                }
+            ]
+        }
+    },
+    "usingAllPartsOfFormUsingANY": {
+        "WHERE": {
+            "OR": [
+                {
+                    "NOT": {
+                        "EQ": {
+                            "rooms_seats": 150
+                        }
+                    }
+                },
+                {
+                    "EQ": {
+                        "rooms_seats": 100
+                    }
+                }
+            ]
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "rooms_address",
+                "rooms_fullname",
+                "rooms_furniture",
+                "rooms_href",
+                "rooms_number",
+                "countAddress"
+            ],
+            "ORDER": {
+                "dir": "UP",
+                "keys": [
+                    "rooms_number"
+                ]
+            }
+        },
+        "TRANSFORMATIONS": {
+            "GROUP": [
+                "rooms_address",
+                "rooms_fullname",
+                "rooms_furniture",
+                "rooms_href",
+                "rooms_number"
+            ],
+            "APPLY": [
+                {
+                    "countAddress": {
+                        "COUNT": "rooms_seats"
+                    }
+                }
+            ]
+        }
+    },
+    "usingAllPartsOfFormUsingNONE": {
+        "WHERE": {
+            "NOT": {
+                "OR": [
+                    {
+                        "NOT": {
+                            "EQ": {
+                                "rooms_seats": 150
+                            }
+                        }
+                    },
+                    {
+                        "EQ": {
+                            "rooms_seats": 100
+                        }
+                    }
+                ]
+            }
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "rooms_address",
+                "rooms_fullname",
+                "rooms_furniture",
+                "rooms_href",
+                "rooms_number",
+                "countAddress"
+            ],
+            "ORDER": {
+                "dir": "UP",
+                "keys": [
+                    "rooms_number"
+                ]
+            }
+        },
+        "TRANSFORMATIONS": {
+            "GROUP": [
+                "rooms_address",
+                "rooms_fullname",
+                "rooms_furniture",
+                "rooms_href",
+                "rooms_number"
+            ],
+            "APPLY": [
+                {
+                    "countAddress": {
+                        "COUNT": "rooms_seats"
+                    }
+                }
+            ]
+        }
+    },
+    "emptyWhere": {
+        "WHERE": {},
+        "OPTIONS": {
+            "COLUMNS": [
+                "rooms_address",
+                "rooms_fullname",
+                "rooms_furniture",
+                "rooms_href",
+                "rooms_number",
+                "countAddress"
+            ],
+            "ORDER": {
+                "dir": "UP",
+                "keys": [
+                    "rooms_number"
+                ]
+            }
+        },
+        "TRANSFORMATIONS": {
+            "GROUP": [
+                "rooms_address",
+                "rooms_fullname",
+                "rooms_furniture",
+                "rooms_href",
+                "rooms_number"
+            ],
+            "APPLY": [
+                {
+                    "countAddress": {
+                        "COUNT": "rooms_seats"
+                    }
+                }
+            ]
+        }
+    },
+    "emptyColumns": {
+        "WHERE": {
+            "NOT": {
+                "EQ": {
+                    "rooms_number": 987
+                }
+            }
+        },
+        "OPTIONS": {
+            "COLUMNS": [],
+            "ORDER": {
+                "dir": "UP",
+                "keys": [
+                    "rooms_number"
+                ]
+            }
+        },
+        "TRANSFORMATIONS": {
+            "GROUP": [
+                "rooms_address",
+                "rooms_fullname",
+                "rooms_furniture",
+                "rooms_href",
+                "rooms_number"
+            ],
+            "APPLY": [
+                {
+                    "countAddress": {
+                        "COUNT": "rooms_seats"
+                    }
+                }
+            ]
+        }
+    },
+    "emptyEverything": {
+        "WHERE": {},
+        "OPTIONS": {
+            "COLUMNS": []
+        }
+    }
+
+
+}

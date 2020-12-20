@@ -1,0 +1,17 @@
+{
+  "title": "invalid - empty equal",
+  "query": {
+    "WHERE": {
+      "EQ": {
+
+      }
+    },
+    "OPTIONS": {
+      "COLUMNS": [
+        "courses_dept"
+      ]
+    }
+  },
+  "isQueryValid": false,
+  "result": "InsightError"
+}

@@ -1,0 +1,17 @@
+{
+  "title": "invalid options key - incorrect id",
+  "query": {
+    "WHERE": {
+      "GT": {
+        "rooms_seats": 97
+      }
+    },
+    "OPTIONS": {
+      "COLUMNS": [
+        "rooms_telephone"
+      ]
+    }
+  },
+  "isQueryValid": false,
+  "result": "InsightError"
+}

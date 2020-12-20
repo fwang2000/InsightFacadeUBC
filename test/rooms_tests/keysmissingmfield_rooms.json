@@ -1,0 +1,18 @@
+{
+  "title": "keys missing mfield",
+  "query": {
+    "WHERE": {
+      "GT": {
+        "rooms_": 100
+      }
+    },
+    "OPTIONS": {
+      "COLUMNS": [
+        "rooms_",
+        "rooms_"
+      ]
+    }
+  },
+  "isQueryValid": false,
+  "result": "InsightError"
+}

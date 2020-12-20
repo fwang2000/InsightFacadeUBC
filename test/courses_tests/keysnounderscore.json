@@ -1,0 +1,18 @@
+{
+  "title": "keys missing _",
+  "query": {
+    "WHERE": {
+      "IS": {
+        "coursestitle": "*c"
+      }
+    },
+    "OPTIONS": {
+      "COLUMNS": [
+        "coursesavg",
+        "coursesuuid"
+      ]
+    }
+  },
+  "isQueryValid": false,
+  "result": "InsightError"
+}

@@ -1,0 +1,17 @@
+{
+  "title": "invalid query - eq mkey is in string",
+  "query": {
+    "WHERE": {
+      "EQ": {
+        "courses_avg": "50"
+      }
+    },
+    "OPTIONS": {
+      "COLUMNS": [
+        "courses_dept"
+      ]
+    }
+  },
+  "isQueryValid": false,
+  "result": "InsightError"
+}

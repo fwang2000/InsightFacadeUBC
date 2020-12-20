@@ -1,0 +1,38 @@
+{
+  "title": "apply inside array is not object",
+  "query": {
+    "WHERE": {
+      "AND": [
+        {
+          "IS": {
+            "rooms_furniture": "*Tables*"
+          }
+        },
+        {
+          "GT": {
+            "rooms_seats": 300
+          }
+        }
+      ]
+    },
+    "OPTIONS": {
+      "COLUMNS": [
+        "rooms2_shortname"
+      ],
+      "ORDER": {
+        "dir": "DOWN",
+        "keys": [
+          "maxSeats"
+        ]
+      }
+    },
+    "TRANSFORMATIONS": {
+      "GROUP": [ "rooms_fullname", "rooms2_shortname" ],
+      "APPLY": [
+      ]
+    }
+  },
+  "isQueryValid": false,
+  "result": "InsightError"
+
+}

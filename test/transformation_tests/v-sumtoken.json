@@ -1,0 +1,124 @@
+{
+  "title": "Valid SUM Token",
+  "query": {
+    "WHERE": {
+
+      "AND": [
+        {
+          "IS": {
+            "courses_dept": "math"
+          }
+        },
+        {
+          "IS": {
+            "courses_id": "32*"
+          }
+        }
+      ]
+
+    },
+    "OPTIONS": {
+      "COLUMNS": [
+        "courses_instructor",
+        "sumPass"
+      ],
+      "ORDER": {
+        "dir": "UP",
+        "keys": [
+          "sumPass"
+        ]
+      }
+    },
+    "TRANSFORMATIONS": {
+      "GROUP": [
+        "courses_instructor"
+      ],
+      "APPLY": [
+        {
+          "sumPass": {
+            "SUM": "courses_pass"
+          }
+        }
+      ]
+    }
+  },
+  "isQueryValid": true,
+    "result": [
+      {
+        "courses_instructor": "nachmias, asaf",
+        "sumPass": 20
+      },
+      {
+        "courses_instructor": "brakocevic, miljan",
+        "sumPass": 21
+      },
+      {
+        "courses_instructor": "brosnan, patrick",
+        "sumPass": 28
+      },
+      {
+        "courses_instructor": "kim, young-heon",
+        "sumPass": 30
+      },
+      {
+        "courses_instructor": "laba, izabella",
+        "sumPass": 34
+      },
+      {
+        "courses_instructor": "loewen, philip",
+        "sumPass": 38
+      },
+      {
+        "courses_instructor": "perkins, edwin",
+        "sumPass": 39
+      },
+      {
+        "courses_instructor": "van willigenburg, stephanie",
+        "sumPass": 39
+      },
+      {
+        "courses_instructor": "ramdorai, sujatha",
+        "sumPass": 43
+      },
+      {
+        "courses_instructor": "silberman, lior",
+        "sumPass": 67
+      },
+      {
+        "courses_instructor": "slade, gordon",
+        "sumPass": 68
+      },
+      {
+        "courses_instructor": "reichstein, zinovy",
+        "sumPass": 68
+      },
+      {
+        "courses_instructor": "karu, kalle",
+        "sumPass": 71
+      },
+      {
+        "courses_instructor": "gordon, julia yulia",
+        "sumPass": 71
+      },
+      {
+        "courses_instructor": "feldman, joel",
+        "sumPass": 89
+      },
+      {
+        "courses_instructor": "pramanik, malabika",
+        "sumPass": 99
+      },
+      {
+        "courses_instructor": "yilmaz, ozgur",
+        "sumPass": 120
+      },
+      {
+        "courses_instructor": "brydges, david",
+        "sumPass": 133
+      },
+      {
+        "courses_instructor": "",
+        "sumPass": 1256
+      }
+    ]
+}

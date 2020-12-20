@@ -1,0 +1,18 @@
+{
+  "title": "columns array - contains number and valid string",
+  "query": {
+    "WHERE": {
+      "GT": {
+        "rooms_seats": 97
+      }
+    },
+    "OPTIONS": {
+      "COLUMNS": [
+        "rooms_address",
+        10
+      ]
+    }
+  },
+  "isQueryValid": false,
+  "result": "InsightError"
+}

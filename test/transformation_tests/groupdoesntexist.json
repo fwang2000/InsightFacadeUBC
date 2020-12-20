@@ -1,0 +1,44 @@
+{
+  "title": "Transformation Group Doesn't Exist",
+  "query": {
+    "WHERE": {
+      "OR": [
+        {
+
+          "IS": {
+            "rooms_furniture": "*Tables*"
+          }
+        },
+        {
+          "IS": {
+            "rooms_shortname": "ALRD"
+          }
+        }
+      ]
+    },
+    "OPTIONS": {
+      "COLUMNS": [
+        "rooms_shortname",
+        "countType"
+      ],
+      "ORDER": {
+        "dir": "UP",
+        "keys": [
+          "rooms_shortname",
+          "countType"
+        ]
+      }
+    },
+    "TRANSFORMATIONS": {
+      "APPLY": [
+        {
+          "countType": {
+            "COUNT": "rooms_type"
+          }
+        }
+      ]
+    }
+  },
+  "isQueryValid": false,
+  "result": "InsightError"
+}

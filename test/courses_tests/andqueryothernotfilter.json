@@ -1,0 +1,28 @@
+{
+  "title": "invalid and query - one filter is not filter",
+  "query": {
+    "WHERE": {
+      "AND": [
+        {
+          "WHAT": {
+            "courses_id": 290
+          }
+        },
+        {
+          "IS": {
+            "courses_uuid": "250"
+          }
+        }
+      ]
+    },
+    "OPTIONS": {
+      "COLUMNS": [
+        "courses_dept",
+        "courses_avg"
+      ],
+      "ORDER": "courses_avg"
+    }
+  },
+  "isQueryValid": false,
+  "result": "InsightError"
+}

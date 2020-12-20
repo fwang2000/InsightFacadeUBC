@@ -1,0 +1,25 @@
+{
+  "title": "invalid and query",
+  "query": {
+    "WHERE": {
+      "AND": [
+        {
+          "GT": {
+            "rooms_seats": 80
+          }
+        },
+        {
+        }
+      ]
+    },
+    "OPTIONS": {
+      "COLUMNS": [
+        "rooms_fullname",
+        "rooms_address"
+      ],
+      "ORDER": "rooms_address"
+    }
+  },
+  "isQueryValid": false,
+  "result": "InsightError"
+}

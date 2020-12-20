@@ -1,0 +1,50 @@
+{
+  "title": "valid wildcard tests",
+  "query": {
+    "WHERE": {
+      "AND": [
+        {
+          "AND": [
+            {
+              "IS": {
+                "courses_title": "*a"
+              }
+            },
+            {
+              "IS": {
+                "courses_dept": "b*"
+              }
+            }
+          ]
+        },
+        {
+          "IS": {
+            "courses_instructor": "*c*"
+          }
+        }
+      ]
+    },
+    "OPTIONS": {
+      "COLUMNS": [
+        "courses_dept",
+        "courses_avg"
+      ],
+      "ORDER": "courses_dept"
+    }
+  },
+  "isQueryValid": true,
+  "result": [
+    {
+      "courses_dept": "bmeg",
+      "courses_avg": 85.59
+    },
+    {
+      "courses_dept": "bmeg",
+      "courses_avg": 87.57
+    },
+    {
+      "courses_dept": "bmeg",
+      "courses_avg": 84.1
+    }
+  ]
+}

@@ -1,0 +1,958 @@
+{
+  "title": "Valid all tokens",
+  "query": {
+    "WHERE": {
+      "GT": {
+        "courses_year": 2015
+      }
+    },
+    "OPTIONS": {
+      "COLUMNS": [
+        "courses_dept",
+        "maxPass",
+        "avgAvg",
+        "minFail",
+        "sumAudit",
+        "countInstructor"
+      ],
+      "ORDER": {
+        "dir": "DOWN",
+        "keys": [
+          "maxPass",
+          "avgAvg"
+        ]
+      }
+    },
+    "TRANSFORMATIONS": {
+      "GROUP": [
+        "courses_dept"
+      ],
+      "APPLY": [
+        {
+          "maxPass": {
+            "MAX": "courses_pass"
+          }
+        },
+        {
+          "avgAvg": {
+            "AVG": "courses_avg"
+          }
+        },
+        {
+          "minFail": {
+            "MIN": "courses_fail"
+          }
+        },
+        {
+          "sumAudit": {
+            "SUM": "courses_audit"
+          }
+        },
+        {
+          "countInstructor": {
+            "COUNT": "courses_instructor"
+          }
+        }
+      ]
+    }
+  },
+  "isQueryValid": true,
+    "result": [
+      {
+        "courses_dept": "econ",
+        "maxPass": 395,
+        "avgAvg": 75.23,
+        "minFail": 0,
+        "sumAudit": 4,
+        "countInstructor": 20
+      },
+      {
+        "courses_dept": "crwr",
+        "maxPass": 361,
+        "avgAvg": 81.05,
+        "minFail": 0,
+        "sumAudit": 4,
+        "countInstructor": 11
+      },
+      {
+        "courses_dept": "math",
+        "maxPass": 313,
+        "avgAvg": 71.44,
+        "minFail": 0,
+        "sumAudit": 2,
+        "countInstructor": 42
+      },
+      {
+        "courses_dept": "biol",
+        "maxPass": 306,
+        "avgAvg": 79.69,
+        "minFail": 0,
+        "sumAudit": 0,
+        "countInstructor": 23
+      },
+      {
+        "courses_dept": "eosc",
+        "maxPass": 285,
+        "avgAvg": 79.42,
+        "minFail": 0,
+        "sumAudit": 1,
+        "countInstructor": 12
+      },
+      {
+        "courses_dept": "lfs",
+        "maxPass": 280,
+        "avgAvg": 73.24,
+        "minFail": 0,
+        "sumAudit": 1,
+        "countInstructor": 1
+      },
+      {
+        "courses_dept": "phys",
+        "maxPass": 233,
+        "avgAvg": 78.93,
+        "minFail": 0,
+        "sumAudit": 5,
+        "countInstructor": 14
+      },
+      {
+        "courses_dept": "frst",
+        "maxPass": 231,
+        "avgAvg": 79.91,
+        "minFail": 0,
+        "sumAudit": 5,
+        "countInstructor": 13
+      },
+      {
+        "courses_dept": "phar",
+        "maxPass": 216,
+        "avgAvg": 87.58,
+        "minFail": 0,
+        "sumAudit": 0,
+        "countInstructor": 7
+      },
+      {
+        "courses_dept": "comm",
+        "maxPass": 209,
+        "avgAvg": 77.23,
+        "minFail": 0,
+        "sumAudit": 0,
+        "countInstructor": 44
+      },
+      {
+        "courses_dept": "pcth",
+        "maxPass": 208,
+        "avgAvg": 79.95,
+        "minFail": 0,
+        "sumAudit": 0,
+        "countInstructor": 2
+      },
+      {
+        "courses_dept": "chem",
+        "maxPass": 208,
+        "avgAvg": 72.6,
+        "minFail": 0,
+        "sumAudit": 5,
+        "countInstructor": 21
+      },
+      {
+        "courses_dept": "poli",
+        "maxPass": 189,
+        "avgAvg": 71.58,
+        "minFail": 0,
+        "sumAudit": 0,
+        "countInstructor": 8
+      },
+      {
+        "courses_dept": "chbe",
+        "maxPass": 182,
+        "avgAvg": 83.4,
+        "minFail": 0,
+        "sumAudit": 0,
+        "countInstructor": 3
+      },
+      {
+        "courses_dept": "cpsc",
+        "maxPass": 171,
+        "avgAvg": 78.37,
+        "minFail": 2,
+        "sumAudit": 1,
+        "countInstructor": 4
+      },
+      {
+        "courses_dept": "ling",
+        "maxPass": 170,
+        "avgAvg": 77.84,
+        "minFail": 0,
+        "sumAudit": 0,
+        "countInstructor": 5
+      },
+      {
+        "courses_dept": "geog",
+        "maxPass": 169,
+        "avgAvg": 74.63,
+        "minFail": 0,
+        "sumAudit": 0,
+        "countInstructor": 6
+      },
+      {
+        "courses_dept": "civl",
+        "maxPass": 163,
+        "avgAvg": 82.53,
+        "minFail": 0,
+        "sumAudit": 0,
+        "countInstructor": 3
+      },
+      {
+        "courses_dept": "engl",
+        "maxPass": 157,
+        "avgAvg": 73.41,
+        "minFail": 0,
+        "sumAudit": 1,
+        "countInstructor": 35
+      },
+      {
+        "courses_dept": "cons",
+        "maxPass": 155,
+        "avgAvg": 71.76,
+        "minFail": 5,
+        "sumAudit": 0,
+        "countInstructor": 1
+      },
+      {
+        "courses_dept": "musc",
+        "maxPass": 148,
+        "avgAvg": 82.31,
+        "minFail": 0,
+        "sumAudit": 6,
+        "countInstructor": 6
+      },
+      {
+        "courses_dept": "cogs",
+        "maxPass": 141,
+        "avgAvg": 72.93,
+        "minFail": 0,
+        "sumAudit": 0,
+        "countInstructor": 2
+      },
+      {
+        "courses_dept": "bioc",
+        "maxPass": 138,
+        "avgAvg": 83.02,
+        "minFail": 0,
+        "sumAudit": 1,
+        "countInstructor": 3
+      },
+      {
+        "courses_dept": "kin",
+        "maxPass": 137,
+        "avgAvg": 79.16,
+        "minFail": 0,
+        "sumAudit": 0,
+        "countInstructor": 1
+      },
+      {
+        "courses_dept": "nurs",
+        "maxPass": 120,
+        "avgAvg": 84,
+        "minFail": 0,
+        "sumAudit": 0,
+        "countInstructor": 14
+      },
+      {
+        "courses_dept": "phil",
+        "maxPass": 105,
+        "avgAvg": 72.58,
+        "minFail": 1,
+        "sumAudit": 0,
+        "countInstructor": 3
+      },
+      {
+        "courses_dept": "fmst",
+        "maxPass": 103,
+        "avgAvg": 71.25,
+        "minFail": 0,
+        "sumAudit": 0,
+        "countInstructor": 3
+      },
+      {
+        "courses_dept": "anth",
+        "maxPass": 102,
+        "avgAvg": 72.96,
+        "minFail": 0,
+        "sumAudit": 2,
+        "countInstructor": 3
+      },
+      {
+        "courses_dept": "hist",
+        "maxPass": 101,
+        "avgAvg": 73.92,
+        "minFail": 0,
+        "sumAudit": 1,
+        "countInstructor": 13
+      },
+      {
+        "courses_dept": "fist",
+        "maxPass": 96,
+        "avgAvg": 76.35,
+        "minFail": 0,
+        "sumAudit": 1,
+        "countInstructor": 4
+      },
+      {
+        "courses_dept": "elec",
+        "maxPass": 96,
+        "avgAvg": 74.25,
+        "minFail": 0,
+        "sumAudit": 0,
+        "countInstructor": 2
+      },
+      {
+        "courses_dept": "busi",
+        "maxPass": 95,
+        "avgAvg": 68.58,
+        "minFail": 0,
+        "sumAudit": 0,
+        "countInstructor": 15
+      },
+      {
+        "courses_dept": "geob",
+        "maxPass": 92,
+        "avgAvg": 74.34,
+        "minFail": 0,
+        "sumAudit": 0,
+        "countInstructor": 5
+      },
+      {
+        "courses_dept": "astr",
+        "maxPass": 89,
+        "avgAvg": 73.1,
+        "minFail": 4,
+        "sumAudit": 0,
+        "countInstructor": 2
+      },
+      {
+        "courses_dept": "mine",
+        "maxPass": 84,
+        "avgAvg": 82,
+        "minFail": 0,
+        "sumAudit": 2,
+        "countInstructor": 7
+      },
+      {
+        "courses_dept": "phth",
+        "maxPass": 80,
+        "avgAvg": 87.39,
+        "minFail": 0,
+        "sumAudit": 0,
+        "countInstructor": 4
+      },
+      {
+        "courses_dept": "apsc",
+        "maxPass": 80,
+        "avgAvg": 75.99,
+        "minFail": 0,
+        "sumAudit": 0,
+        "countInstructor": 3
+      },
+      {
+        "courses_dept": "asia",
+        "maxPass": 80,
+        "avgAvg": 74.16,
+        "minFail": 0,
+        "sumAudit": 0,
+        "countInstructor": 4
+      },
+      {
+        "courses_dept": "anat",
+        "maxPass": 79,
+        "avgAvg": 86.29,
+        "minFail": 1,
+        "sumAudit": 0,
+        "countInstructor": 1
+      },
+      {
+        "courses_dept": "cnps",
+        "maxPass": 78,
+        "avgAvg": 87.46,
+        "minFail": 0,
+        "sumAudit": 1,
+        "countInstructor": 12
+      },
+      {
+        "courses_dept": "epse",
+        "maxPass": 75,
+        "avgAvg": 90.68,
+        "minFail": 0,
+        "sumAudit": 1,
+        "countInstructor": 13
+      },
+      {
+        "courses_dept": "fnh",
+        "maxPass": 70,
+        "avgAvg": 80.33,
+        "minFail": 0,
+        "sumAudit": 0,
+        "countInstructor": 1
+      },
+      {
+        "courses_dept": "chin",
+        "maxPass": 69,
+        "avgAvg": 76.72,
+        "minFail": 0,
+        "sumAudit": 0,
+        "countInstructor": 4
+      },
+      {
+        "courses_dept": "grsj",
+        "maxPass": 67,
+        "avgAvg": 80.4,
+        "minFail": 0,
+        "sumAudit": 0,
+        "countInstructor": 6
+      },
+      {
+        "courses_dept": "apbi",
+        "maxPass": 67,
+        "avgAvg": 77.62,
+        "minFail": 0,
+        "sumAudit": 0,
+        "countInstructor": 7
+      },
+      {
+        "courses_dept": "appp",
+        "maxPass": 65,
+        "avgAvg": 81.64,
+        "minFail": 2,
+        "sumAudit": 0,
+        "countInstructor": 1
+      },
+      {
+        "courses_dept": "arth",
+        "maxPass": 64,
+        "avgAvg": 74.81,
+        "minFail": 1,
+        "sumAudit": 1,
+        "countInstructor": 2
+      },
+      {
+        "courses_dept": "igen",
+        "maxPass": 59,
+        "avgAvg": 81.44,
+        "minFail": 0,
+        "sumAudit": 0,
+        "countInstructor": 2
+      },
+      {
+        "courses_dept": "bafi",
+        "maxPass": 55,
+        "avgAvg": 84,
+        "minFail": 0,
+        "sumAudit": 0,
+        "countInstructor": 7
+      },
+      {
+        "courses_dept": "bapa",
+        "maxPass": 55,
+        "avgAvg": 83.08,
+        "minFail": 0,
+        "sumAudit": 0,
+        "countInstructor": 2
+      },
+      {
+        "courses_dept": "bama",
+        "maxPass": 55,
+        "avgAvg": 81.73,
+        "minFail": 0,
+        "sumAudit": 1,
+        "countInstructor": 7
+      },
+      {
+        "courses_dept": "baac",
+        "maxPass": 55,
+        "avgAvg": 80.21,
+        "minFail": 0,
+        "sumAudit": 0,
+        "countInstructor": 4
+      },
+      {
+        "courses_dept": "bahr",
+        "maxPass": 55,
+        "avgAvg": 80.05,
+        "minFail": 0,
+        "sumAudit": 0,
+        "countInstructor": 5
+      },
+      {
+        "courses_dept": "fre",
+        "maxPass": 55,
+        "avgAvg": 77.13,
+        "minFail": 0,
+        "sumAudit": 0,
+        "countInstructor": 1
+      },
+      {
+        "courses_dept": "babs",
+        "maxPass": 53,
+        "avgAvg": 83.01,
+        "minFail": 0,
+        "sumAudit": 0,
+        "countInstructor": 2
+      },
+      {
+        "courses_dept": "fipr",
+        "maxPass": 52,
+        "avgAvg": 78.5,
+        "minFail": 0,
+        "sumAudit": 0,
+        "countInstructor": 2
+      },
+      {
+        "courses_dept": "basc",
+        "maxPass": 50,
+        "avgAvg": 82.2,
+        "minFail": 0,
+        "sumAudit": 0,
+        "countInstructor": 3
+      },
+      {
+        "courses_dept": "germ",
+        "maxPass": 47,
+        "avgAvg": 83.51,
+        "minFail": 0,
+        "sumAudit": 3,
+        "countInstructor": 13
+      },
+      {
+        "courses_dept": "libr",
+        "maxPass": 46,
+        "avgAvg": 86.51,
+        "minFail": 0,
+        "sumAudit": 0,
+        "countInstructor": 11
+      },
+      {
+        "courses_dept": "mtrl",
+        "maxPass": 46,
+        "avgAvg": 79.5,
+        "minFail": 0,
+        "sumAudit": 0,
+        "countInstructor": 2
+      },
+      {
+        "courses_dept": "clst",
+        "maxPass": 46,
+        "avgAvg": 74.44,
+        "minFail": 0,
+        "sumAudit": 0,
+        "countInstructor": 4
+      },
+      {
+        "courses_dept": "baen",
+        "maxPass": 45,
+        "avgAvg": 82.08,
+        "minFail": 0,
+        "sumAudit": 0,
+        "countInstructor": 2
+      },
+      {
+        "courses_dept": "basm",
+        "maxPass": 43,
+        "avgAvg": 80.71,
+        "minFail": 0,
+        "sumAudit": 0,
+        "countInstructor": 2
+      },
+      {
+        "courses_dept": "coec",
+        "maxPass": 43,
+        "avgAvg": 77.56,
+        "minFail": 0,
+        "sumAudit": 0,
+        "countInstructor": 1
+      },
+      {
+        "courses_dept": "cohr",
+        "maxPass": 43,
+        "avgAvg": 77.56,
+        "minFail": 0,
+        "sumAudit": 0,
+        "countInstructor": 3
+      },
+      {
+        "courses_dept": "cpen",
+        "maxPass": 41,
+        "avgAvg": 75.61,
+        "minFail": 0,
+        "sumAudit": 0,
+        "countInstructor": 1
+      },
+      {
+        "courses_dept": "cens",
+        "maxPass": 40,
+        "avgAvg": 78.53,
+        "minFail": 0,
+        "sumAudit": 0,
+        "countInstructor": 1
+      },
+      {
+        "courses_dept": "arch",
+        "maxPass": 39,
+        "avgAvg": 83.39,
+        "minFail": 0,
+        "sumAudit": 0,
+        "countInstructor": 10
+      },
+      {
+        "courses_dept": "lled",
+        "maxPass": 39,
+        "avgAvg": 69.54,
+        "minFail": 0,
+        "sumAudit": 2,
+        "countInstructor": 20
+      },
+      {
+        "courses_dept": "ba",
+        "maxPass": 38,
+        "avgAvg": 84.18,
+        "minFail": 0,
+        "sumAudit": 0,
+        "countInstructor": 1
+      },
+      {
+        "courses_dept": "audi",
+        "maxPass": 37,
+        "avgAvg": 88.88,
+        "minFail": 0,
+        "sumAudit": 0,
+        "countInstructor": 5
+      },
+      {
+        "courses_dept": "baul",
+        "maxPass": 37,
+        "avgAvg": 85.62,
+        "minFail": 0,
+        "sumAudit": 0,
+        "countInstructor": 1
+      },
+      {
+        "courses_dept": "fren",
+        "maxPass": 37,
+        "avgAvg": 75.54,
+        "minFail": 0,
+        "sumAudit": 5,
+        "countInstructor": 11
+      },
+      {
+        "courses_dept": "itst",
+        "maxPass": 36,
+        "avgAvg": 76.63,
+        "minFail": 0,
+        "sumAudit": 1,
+        "countInstructor": 2
+      },
+      {
+        "courses_dept": "larc",
+        "maxPass": 35,
+        "avgAvg": 83.93,
+        "minFail": 0,
+        "sumAudit": 0,
+        "countInstructor": 8
+      },
+      {
+        "courses_dept": "adhe",
+        "maxPass": 34,
+        "avgAvg": 82.62,
+        "minFail": 0,
+        "sumAudit": 0,
+        "countInstructor": 4
+      },
+      {
+        "courses_dept": "envr",
+        "maxPass": 34,
+        "avgAvg": 81.65,
+        "minFail": 0,
+        "sumAudit": 0,
+        "countInstructor": 1
+      },
+      {
+        "courses_dept": "eced",
+        "maxPass": 33,
+        "avgAvg": 87.56,
+        "minFail": 0,
+        "sumAudit": 0,
+        "countInstructor": 3
+      },
+      {
+        "courses_dept": "bams",
+        "maxPass": 33,
+        "avgAvg": 82.15,
+        "minFail": 0,
+        "sumAudit": 0,
+        "countInstructor": 4
+      },
+      {
+        "courses_dept": "ital",
+        "maxPass": 33,
+        "avgAvg": 78.34,
+        "minFail": 0,
+        "sumAudit": 4,
+        "countInstructor": 6
+      },
+      {
+        "courses_dept": "plan",
+        "maxPass": 31,
+        "avgAvg": 87.42,
+        "minFail": 0,
+        "sumAudit": 2,
+        "countInstructor": 5
+      },
+      {
+        "courses_dept": "ends",
+        "maxPass": 31,
+        "avgAvg": 83.57,
+        "minFail": 0,
+        "sumAudit": 0,
+        "countInstructor": 3
+      },
+      {
+        "courses_dept": "food",
+        "maxPass": 31,
+        "avgAvg": 83.55,
+        "minFail": 0,
+        "sumAudit": 0,
+        "countInstructor": 5
+      },
+      {
+        "courses_dept": "caps",
+        "maxPass": 30,
+        "avgAvg": 85.33,
+        "minFail": 0,
+        "sumAudit": 0,
+        "countInstructor": 1
+      },
+      {
+        "courses_dept": "libe",
+        "maxPass": 30,
+        "avgAvg": 82.81,
+        "minFail": 0,
+        "sumAudit": 0,
+        "countInstructor": 2
+      },
+      {
+        "courses_dept": "japn",
+        "maxPass": 29,
+        "avgAvg": 70.9,
+        "minFail": 0,
+        "sumAudit": 2,
+        "countInstructor": 2
+      },
+      {
+        "courses_dept": "latn",
+        "maxPass": 28,
+        "avgAvg": 70.9,
+        "minFail": 1,
+        "sumAudit": 3,
+        "countInstructor": 4
+      },
+      {
+        "courses_dept": "nest",
+        "maxPass": 28,
+        "avgAvg": 66.33,
+        "minFail": 2,
+        "sumAudit": 0,
+        "countInstructor": 1
+      },
+      {
+        "courses_dept": "micb",
+        "maxPass": 27,
+        "avgAvg": 87.26,
+        "minFail": 0,
+        "sumAudit": 0,
+        "countInstructor": 1
+      },
+      {
+        "courses_dept": "bmeg",
+        "maxPass": 27,
+        "avgAvg": 83.58,
+        "minFail": 0,
+        "sumAudit": 0,
+        "countInstructor": 2
+      },
+      {
+        "courses_dept": "arst",
+        "maxPass": 27,
+        "avgAvg": 83.24,
+        "minFail": 0,
+        "sumAudit": 0,
+        "countInstructor": 6
+      },
+      {
+        "courses_dept": "bait",
+        "maxPass": 26,
+        "avgAvg": 83.03,
+        "minFail": 0,
+        "sumAudit": 0,
+        "countInstructor": 2
+      },
+      {
+        "courses_dept": "gpp",
+        "maxPass": 25,
+        "avgAvg": 84.54,
+        "minFail": 0,
+        "sumAudit": 0,
+        "countInstructor": 1
+      },
+      {
+        "courses_dept": "medg",
+        "maxPass": 24,
+        "avgAvg": 86.37,
+        "minFail": 0,
+        "sumAudit": 0,
+        "countInstructor": 2
+      },
+      {
+        "courses_dept": "isci",
+        "maxPass": 23,
+        "avgAvg": 81.26,
+        "minFail": 0,
+        "sumAudit": 0,
+        "countInstructor": 1
+      },
+      {
+        "courses_dept": "etec",
+        "maxPass": 21,
+        "avgAvg": 89.94,
+        "minFail": 0,
+        "sumAudit": 0,
+        "countInstructor": 3
+      },
+      {
+        "courses_dept": "midw",
+        "maxPass": 21,
+        "avgAvg": 89.76,
+        "minFail": 0,
+        "sumAudit": 0,
+        "countInstructor": 3
+      },
+      {
+        "courses_dept": "edst",
+        "maxPass": 20,
+        "avgAvg": 88.08,
+        "minFail": 0,
+        "sumAudit": 3,
+        "countInstructor": 7
+      },
+      {
+        "courses_dept": "hgse",
+        "maxPass": 19,
+        "avgAvg": 86.57,
+        "minFail": 0,
+        "sumAudit": 0,
+        "countInstructor": 1
+      },
+      {
+        "courses_dept": "korn",
+        "maxPass": 19,
+        "avgAvg": 73.38,
+        "minFail": 2,
+        "sumAudit": 0,
+        "countInstructor": 1
+      },
+      {
+        "courses_dept": "edcp",
+        "maxPass": 18,
+        "avgAvg": 89.55,
+        "minFail": 0,
+        "sumAudit": 2,
+        "countInstructor": 4
+      },
+      {
+        "courses_dept": "dani",
+        "maxPass": 18,
+        "avgAvg": 87.94,
+        "minFail": 0,
+        "sumAudit": 2,
+        "countInstructor": 1
+      },
+      {
+        "courses_dept": "educ",
+        "maxPass": 16,
+        "avgAvg": 85.06,
+        "minFail": 0,
+        "sumAudit": 0,
+        "countInstructor": 3
+      },
+      {
+        "courses_dept": "fopr",
+        "maxPass": 15,
+        "avgAvg": 73.33,
+        "minFail": 0,
+        "sumAudit": 0,
+        "countInstructor": 3
+      },
+      {
+        "courses_dept": "bota",
+        "maxPass": 14,
+        "avgAvg": 90.71,
+        "minFail": 0,
+        "sumAudit": 0,
+        "countInstructor": 1
+      },
+      {
+        "courses_dept": "clch",
+        "maxPass": 14,
+        "avgAvg": 77.43,
+        "minFail": 0,
+        "sumAudit": 0,
+        "countInstructor": 1
+      },
+      {
+        "courses_dept": "fnel",
+        "maxPass": 13,
+        "avgAvg": 87.5,
+        "minFail": 1,
+        "sumAudit": 0,
+        "countInstructor": 1
+      },
+      {
+        "courses_dept": "eece",
+        "maxPass": 10,
+        "avgAvg": 83.25,
+        "minFail": 0,
+        "sumAudit": 1,
+        "countInstructor": 4
+      },
+      {
+        "courses_dept": "astu",
+        "maxPass": 8,
+        "avgAvg": 79.63,
+        "minFail": 0,
+        "sumAudit": 0,
+        "countInstructor": 1
+      },
+      {
+        "courses_dept": "grek",
+        "maxPass": 7,
+        "avgAvg": 78.06,
+        "minFail": 0,
+        "sumAudit": 0,
+        "countInstructor": 2
+      },
+      {
+        "courses_dept": "lais",
+        "maxPass": 6,
+        "avgAvg": 86.33,
+        "minFail": 0,
+        "sumAudit": 0,
+        "countInstructor": 1
+      },
+      {
+        "courses_dept": "hebr",
+        "maxPass": 5,
+        "avgAvg": 78,
+        "minFail": 0,
+        "sumAudit": 0,
+        "countInstructor": 1
+      }
+    ]
+}

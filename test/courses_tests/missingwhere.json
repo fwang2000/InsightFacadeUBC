@@ -1,0 +1,13 @@
+{
+  "title": "missing options",
+  "query": {
+    "OPTIONS": {
+      "COLUMNS": [
+        "courses_uuid"
+      ]
+    }
+  },
+  "isQueryValid": false,
+  "result": "InsightError"
+}
+

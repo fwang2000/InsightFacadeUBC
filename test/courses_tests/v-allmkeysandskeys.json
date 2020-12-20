@@ -1,0 +1,79 @@
+{
+  "title": "Test All mkeys and skeys with valid inputs",
+  "query": {
+    "WHERE": {
+
+      "OR": [
+        {
+          "GT": {
+            "coursesTest_pass": 1000
+          }
+        },
+        {
+          "EQ": {
+            "coursesTest_year": 1990
+          }
+        },
+        {
+          "EQ": {
+            "coursesTest_audit": 2
+          }
+        },
+        {
+          "GT": {
+            "coursesTest_fail": 100
+          }
+        },
+        {
+          "IS": {
+
+            "coursesTest_id": "100"
+          }
+        },
+        {
+          "IS": {
+
+            "coursesTest_instructor": "*b"
+          }
+        },
+        {
+          "IS": {
+
+            "coursesTest_title": "*a"
+          }
+        },
+        {
+          "IS": {
+            "coursesTest_uuid": "12186"
+          }
+        }
+      ]
+    },
+    "OPTIONS": {
+      "COLUMNS": [
+
+        "coursesTest_dept"
+
+      ]
+    }
+  },
+  "isQueryValid": true,
+  
+    "result": [
+      { "coursesTest_dept": "anth" },
+      { "coursesTest_dept": "anth" },
+      { "coursesTest_dept": "anth" },
+      { "coursesTest_dept": "anth" },
+      { "coursesTest_dept": "anth" },
+      { "coursesTest_dept": "anth" },
+      { "coursesTest_dept": "anth" },
+      { "coursesTest_dept": "anth" },
+      { "coursesTest_dept": "anth" },
+      { "coursesTest_dept": "anth" },
+      { "coursesTest_dept": "anth" },
+      { "coursesTest_dept": "anth" },
+      { "coursesTest_dept": "anth" }
+    ]
+  
+}
+

@@ -1,0 +1,28 @@
+{
+  "title": "invalid query - courses and rooms databases queried",
+  "query": {
+    "WHERE": {
+      "OR": [
+        {
+          "GT": {
+            "rooms_seats": 97
+          }
+        },
+        {
+          "IS": {
+            "courses_dept": "a*"
+          }
+        }
+      ]
+    },
+    "OPTIONS": {
+      "COLUMNS": [
+        "courses_avg",
+        "rooms_lon"
+      ],
+      "ORDER": "rooms_lon"
+    }
+  },
+  "isQueryValid": false,
+  "result": "InsightError"
+}

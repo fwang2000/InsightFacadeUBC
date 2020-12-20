@@ -1,0 +1,19 @@
+{
+  "title": "fail not number",
+  "query": {
+    "WHERE": {
+      "GT": {
+        "courses_fail": "one-hundred and two"
+      }
+    },
+    "OPTIONS": {
+      "COLUMNS": [
+        "courses_dept",
+        "courses_avg"
+      ],
+      "ORDER": "courses_avg"
+    }
+  },
+  "isQueryValid": false,
+  "result": "InsightError"
+}

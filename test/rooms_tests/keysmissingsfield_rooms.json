@@ -1,0 +1,18 @@
+{
+  "title": "keys missing sfield",
+  "query": {
+    "WHERE": {
+      "IS": {
+        "rooms_": "*c"
+      }
+    },
+    "OPTIONS": {
+      "COLUMNS": [
+        "rooms_",
+        "rooms_"
+      ]
+    }
+  },
+  "isQueryValid": false,
+  "result": "InsightError"
+}

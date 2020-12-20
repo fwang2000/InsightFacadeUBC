@@ -1,0 +1,17 @@
+{
+  "title": "rooms dataset querying course keys",
+  "query": {
+    "WHERE": {
+      "GT": {
+        "rooms_seats": 97
+      }
+    },
+    "OPTIONS": {
+      "COLUMNS": [
+        "maxSeats"
+      ]
+    }
+  },
+  "isQueryValid": false,
+  "result": "InsightError"
+}

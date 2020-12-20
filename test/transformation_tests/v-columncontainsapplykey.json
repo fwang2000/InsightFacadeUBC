@@ -1,0 +1,45 @@
+{
+  "title": "querying courses dataset, not rooms in group",
+  "query": {
+    "WHERE": {
+      "LT": {
+        "rooms_seats": 20
+      }
+    },
+    "OPTIONS": {
+      "COLUMNS": [
+        "maxSeats"
+      ]
+    },
+    "TRANSFORMATIONS": {
+      "GROUP": [
+        "rooms_shortname",
+        "rooms_type"
+      ],
+      "APPLY": [
+        {
+          "maxSeats": {
+            "MAX": "rooms_seats"
+          }
+        }
+      ]
+    }
+  },
+  "isQueryValid": true,
+    "result": [
+      { "maxSeats": 16 },
+      { "maxSeats": 18 },
+      { "maxSeats": 12 },
+      { "maxSeats": 18 },
+      { "maxSeats": 16 },
+      { "maxSeats": 16 },
+      { "maxSeats": 16 },
+      { "maxSeats": 16 },
+      { "maxSeats": 8 },
+      { "maxSeats": 16 },
+      { "maxSeats": 16 },
+      { "maxSeats": 14 },
+      { "maxSeats": 16 },
+      { "maxSeats": 16 }
+    ]
+}

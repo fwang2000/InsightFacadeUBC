@@ -1,0 +1,17 @@
+{
+  "title": "invalid query - lt mkey number is in string",
+  "query": {
+    "WHERE": {
+      "LT": {
+        "courses_avg": "90"
+      }
+    },
+    "OPTIONS": {
+      "COLUMNS": [
+        "courses_dept"
+      ]
+    }
+  },
+  "isQueryValid": false,
+  "result": "InsightError"
+}

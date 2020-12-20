@@ -1,0 +1,16 @@
+{
+  "title": "Order Key - null",
+  "query": {
+    "WHERE": {
+      "GT": {
+        "courses_avg": 97
+      }
+    },
+    "OPTIONS": {
+        "COLUMNS": null
+    }
+  },
+  "isQueryValid": false,
+  "result": "InsightError"
+}
+

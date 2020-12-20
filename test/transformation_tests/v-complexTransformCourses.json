@@ -1,0 +1,233 @@
+{
+    "title": "complex transform query",
+    "query": {
+        "WHERE": {
+            "OR": [
+                {
+                    "AND": [
+                        {
+                            "GT": {
+                                "courses_avg": 90
+                            }
+                        },
+                        {
+                            "IS": {
+                                "courses_dept": "adhe"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "EQ": {
+                        "courses_avg": 95
+                    }
+                }
+            ]
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "courses_dept",
+                "courses_instructor",
+                "maxPass"
+            ],
+            "ORDER": {
+                "dir": "DOWN",
+                "keys": [
+                    "courses_dept",
+                    "maxPass"
+                ]
+            }
+        },
+        "TRANSFORMATIONS": {
+            "GROUP": [
+                "courses_dept",
+                "courses_instructor"
+            ],
+            "APPLY": [
+                {
+                    "maxPass": {
+                        "MAX": "courses_pass"
+                    }
+                }
+            ]
+        }
+    },
+    "isQueryValid": true,
+        "result": [
+            {
+                "courses_dept": "sowk",
+                "courses_instructor": "clark, natalie",
+                "maxPass": 4
+            },
+            {
+                "courses_dept": "rhsc",
+                "courses_instructor": "",
+                "maxPass": 6
+            },
+            {
+                "courses_dept": "psyc",
+                "courses_instructor": "de longis, anita",
+                "maxPass": 8
+            },
+            {
+                "courses_dept": "psyc",
+                "courses_instructor": "",
+                "maxPass": 8
+            },
+            {
+                "courses_dept": "obst",
+                "courses_instructor": "",
+                "maxPass": 1
+            },
+            {
+                "courses_dept": "nurs",
+                "courses_instructor": "phillips, craig",
+                "maxPass": 9
+            },
+            {
+                "courses_dept": "nurs",
+                "courses_instructor": "",
+                "maxPass": 9
+            },
+            {
+                "courses_dept": "musc",
+                "courses_instructor": "langager, graeme",
+                "maxPass": 7
+            },
+            {
+                "courses_dept": "musc",
+                "courses_instructor": "",
+                "maxPass": 7
+            },
+            {
+                "courses_dept": "mtrl",
+                "courses_instructor": "dixon, david",
+                "maxPass": 6
+            },
+            {
+                "courses_dept": "mtrl",
+                "courses_instructor": "",
+                "maxPass": 6
+            },
+            {
+                "courses_dept": "math",
+                "courses_instructor": "",
+                "maxPass": 6
+            },
+            {
+                "courses_dept": "kin",
+                "courses_instructor": "",
+                "maxPass": 7
+            },
+            {
+                "courses_dept": "epse",
+                "courses_instructor": "zumbo, bruno",
+                "maxPass": 9
+            },
+            {
+                "courses_dept": "epse",
+                "courses_instructor": "",
+                "maxPass": 9
+            },
+            {
+                "courses_dept": "epse",
+                "courses_instructor": "vadeboncoeur, jennifer",
+                "maxPass": 7
+            },
+            {
+                "courses_dept": "edcp",
+                "courses_instructor": "petrina, stephen",
+                "maxPass": 19
+            },
+            {
+                "courses_dept": "edcp",
+                "courses_instructor": "",
+                "maxPass": 19
+            },
+            {
+                "courses_dept": "econ",
+                "courses_instructor": "gallipoli, giovanni",
+                "maxPass": 3
+            },
+            {
+                "courses_dept": "econ",
+                "courses_instructor": "",
+                "maxPass": 3
+            },
+            {
+                "courses_dept": "crwr",
+                "courses_instructor": "",
+                "maxPass": 3
+            },
+            {
+                "courses_dept": "crwr",
+                "courses_instructor": "graefe, sara",
+                "maxPass": 2
+            },
+            {
+                "courses_dept": "crwr",
+                "courses_instructor": "galloway, steve",
+                "maxPass": 2
+            },
+            {
+                "courses_dept": "crwr",
+                "courses_instructor": "svendsen, linda jane",
+                "maxPass": 1
+            },
+            {
+                "courses_dept": "crwr",
+                "courses_instructor": "medved, maureen",
+                "maxPass": 1
+            },
+            {
+                "courses_dept": "crwr",
+                "courses_instructor": "acheson, alison",
+                "maxPass": 1
+            },
+            {
+                "courses_dept": "cpsc",
+                "courses_instructor": "",
+                "maxPass": 1
+            },
+            {
+                "courses_dept": "cnps",
+                "courses_instructor": "schultz, izabela",
+                "maxPass": 4
+            },
+            {
+                "courses_dept": "cnps",
+                "courses_instructor": "",
+                "maxPass": 4
+            },
+            {
+                "courses_dept": "bmeg",
+                "courses_instructor": "dumont, guy a",
+                "maxPass": 2
+            },
+            {
+                "courses_dept": "bmeg",
+                "courses_instructor": "",
+                "maxPass": 2
+            },
+            {
+                "courses_dept": "adhe",
+                "courses_instructor": "",
+                "maxPass": 62
+            },
+            {
+                "courses_dept": "adhe",
+                "courses_instructor": "bishundayal, deonarine",
+                "maxPass": 33
+            },
+            {
+                "courses_dept": "adhe",
+                "courses_instructor": "vanwynsberghe, robert",
+                "maxPass": 31
+            },
+            {
+                "courses_dept": "adhe",
+                "courses_instructor": "falk, clifford",
+                "maxPass": 11
+            }
+        ]
+}

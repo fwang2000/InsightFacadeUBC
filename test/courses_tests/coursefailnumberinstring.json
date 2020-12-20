@@ -1,0 +1,17 @@
+{
+  "title": "invalid course fail - number in string",
+  "query": {
+    "WHERE": {
+      "EQ": {
+        "courses_fail": "20"
+      }
+    },
+    "OPTIONS": {
+      "COLUMNS": [
+        "courses_dept"
+      ]
+    }
+  },
+  "isQueryValid": false,
+  "result": "InsightError"
+}

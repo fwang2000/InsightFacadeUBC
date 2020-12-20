@@ -1,0 +1,15 @@
+{
+  "title": "Room Columns Empty",
+  "query": {
+    "WHERE": {
+      "GT": {
+        "rooms_seats": 97
+      }
+    },
+    "OPTIONS": {
+      "COLUMNS": []
+    }
+  },
+  "isQueryValid": false,
+  "result": "InsightError"
+}

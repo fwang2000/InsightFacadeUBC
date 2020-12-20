@@ -1,0 +1,17 @@
+{
+  "title": "invalid query - lt mkey is spelled out",
+  "query": {
+    "WHERE": {
+      "LT": {
+        "courses_avg": "ninety"
+      }
+    },
+    "OPTIONS": {
+      "COLUMNS": [
+        "courses_dept"
+      ]
+    }
+  },
+  "isQueryValid": false,
+  "result": "InsightError"
+}

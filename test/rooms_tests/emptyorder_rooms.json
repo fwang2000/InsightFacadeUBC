@@ -1,0 +1,19 @@
+{
+  "title": "Order Key Empty",
+  "query": {
+    "WHERE": {
+      "GT": {
+        "rooms_seats": 50
+      }
+    },
+    "OPTIONS": {
+      "COLUMNS": [
+        "rooms_lat",
+        "rooms_lon"
+      ],
+      "ORDER": [ ]
+    }
+  },
+  "isQueryValid": false,
+  "result": "InsightError"
+}

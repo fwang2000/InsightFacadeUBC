@@ -1,0 +1,18 @@
+{
+  "title": "keys missing mfield",
+  "query": {
+    "WHERE": {
+      "GT": {
+        "courses_": 100
+      }
+    },
+    "OPTIONS": {
+      "COLUMNS": [
+        "courses_",
+        "courses_"
+      ]
+    }
+  },
+  "isQueryValid": false,
+  "result": "InsightError"
+}

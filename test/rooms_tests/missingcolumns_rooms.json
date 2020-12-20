@@ -1,0 +1,14 @@
+{
+  "title": "no columns array",
+  "query": {
+    "WHERE": {
+      "GT": {
+        "rooms_seats": 97
+      }
+    },
+    "OPTIONS": {
+    }
+  },
+  "isQueryValid": false,
+  "result": "InsightError"
+}

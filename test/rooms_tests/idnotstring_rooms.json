@@ -1,0 +1,17 @@
+{
+  "title": "id not string",
+  "query": {
+    "WHERE": {
+      "IS": {
+        "rooms_furniture": null
+      }
+    },
+    "OPTIONS": {
+        "COLUMNS": [
+            "rooms_seats"
+        ]
+    }
+  },
+  "isQueryValid": false,
+  "result": "InsightError"
+}

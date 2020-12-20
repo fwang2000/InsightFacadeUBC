@@ -1,0 +1,132 @@
+{
+  "title": "multiple add query",
+    "query": {
+        "WHERE": {
+            "OR": [
+                {
+                    "GT": {
+                        "rooms_seats": 95
+                    }
+                },
+                {
+                    "LT": {
+                        "rooms_lon": -123.2559
+                    }
+                },
+                {
+                    "IS": {
+                        "rooms_type": "*Case*"
+                    }
+                }
+            ]
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "rooms_shortname"
+            ],
+            "ORDER": "rooms_shortname"
+        }
+    },
+  "isQueryValid": true,
+        "result": [
+            { "rooms_shortname": "AERL" },
+            { "rooms_shortname": "ALRD" },
+            { "rooms_shortname": "ALRD" },
+            { "rooms_shortname": "ANGU" },
+            { "rooms_shortname": "ANGU" },
+            { "rooms_shortname": "ANGU" },
+            { "rooms_shortname": "ANGU" },
+            { "rooms_shortname": "ANGU" },
+            { "rooms_shortname": "ANGU" },
+            { "rooms_shortname": "ANGU" },
+            { "rooms_shortname": "ANGU" },
+            { "rooms_shortname": "ANGU" },
+            { "rooms_shortname": "ANSO" },
+            { "rooms_shortname": "ANSO" },
+            { "rooms_shortname": "ANSO" },
+            { "rooms_shortname": "ANSO" },
+            { "rooms_shortname": "AUDX" },
+            { "rooms_shortname": "AUDX" },
+            { "rooms_shortname": "BIOL" },
+            { "rooms_shortname": "BUCH" },
+            { "rooms_shortname": "BUCH" },
+            { "rooms_shortname": "BUCH" },
+            { "rooms_shortname": "BUCH" },
+            { "rooms_shortname": "BUCH" },
+            { "rooms_shortname": "BUCH" },
+            { "rooms_shortname": "BUCH" },
+            { "rooms_shortname": "BUCH" },
+            { "rooms_shortname": "BUCH" },
+            { "rooms_shortname": "BUCH" },
+            { "rooms_shortname": "BUCH" },
+            { "rooms_shortname": "CEME" },
+            { "rooms_shortname": "CEME" },
+            { "rooms_shortname": "CEME" },
+            { "rooms_shortname": "CEME" },
+            { "rooms_shortname": "CHBE" },
+            { "rooms_shortname": "CHEM" },
+            { "rooms_shortname": "CHEM" },
+            { "rooms_shortname": "CHEM" },
+            { "rooms_shortname": "CHEM" },
+            { "rooms_shortname": "CIRS" },
+            { "rooms_shortname": "DMP" },
+            { "rooms_shortname": "DMP" },
+            { "rooms_shortname": "ESB" },
+            { "rooms_shortname": "ESB" },
+            { "rooms_shortname": "FNH" },
+            { "rooms_shortname": "FRDM" },
+            { "rooms_shortname": "FSC" },
+            { "rooms_shortname": "FSC" },
+            { "rooms_shortname": "FSC" },
+            { "rooms_shortname": "FSC" },
+            { "rooms_shortname": "GEOG" },
+            { "rooms_shortname": "GEOG" },
+            { "rooms_shortname": "GEOG" },
+            { "rooms_shortname": "GEOG" },
+            { "rooms_shortname": "GEOG" },
+            { "rooms_shortname": "GEOG" },
+            { "rooms_shortname": "GEOG" },
+            { "rooms_shortname": "GEOG" },
+            { "rooms_shortname": "HEBB" },
+            { "rooms_shortname": "HENN" },
+            { "rooms_shortname": "HENN" },
+            { "rooms_shortname": "HENN" },
+            { "rooms_shortname": "IBLC" },
+            { "rooms_shortname": "IBLC" },
+            { "rooms_shortname": "IBLC" },
+            { "rooms_shortname": "IONA" },
+            { "rooms_shortname": "LSC" },
+            { "rooms_shortname": "LSC" },
+            { "rooms_shortname": "LSC" },
+            { "rooms_shortname": "LSK" },
+            { "rooms_shortname": "LSK" },
+            { "rooms_shortname": "MATH" },
+            { "rooms_shortname": "MATX" },
+            { "rooms_shortname": "MCLD" },
+            { "rooms_shortname": "MCLD" },
+            { "rooms_shortname": "MCML" },
+            { "rooms_shortname": "MCML" },
+            { "rooms_shortname": "OSBO" },
+            { "rooms_shortname": "PHRM" },
+            { "rooms_shortname": "PHRM" },
+            { "rooms_shortname": "SCRF" },
+            { "rooms_shortname": "SRC" },
+            { "rooms_shortname": "SRC" },
+            { "rooms_shortname": "SRC" },
+            { "rooms_shortname": "SWNG" },
+            { "rooms_shortname": "SWNG" },
+            { "rooms_shortname": "SWNG" },
+            { "rooms_shortname": "SWNG" },
+            { "rooms_shortname": "UCLL" },
+            { "rooms_shortname": "UCLL" },
+            { "rooms_shortname": "UCLL" },
+            { "rooms_shortname": "UCLL" },
+            { "rooms_shortname": "WESB" },
+            { "rooms_shortname": "WESB" },
+            { "rooms_shortname": "WOOD" },
+            { "rooms_shortname": "WOOD" },
+            { "rooms_shortname": "WOOD" },
+            { "rooms_shortname": "WOOD" },
+            { "rooms_shortname": "WOOD" }
+        ]
+}

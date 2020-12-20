@@ -1,0 +1,17 @@
+{
+  "title": "invalid query - gt mkey is in string",
+  "query": {
+    "WHERE": {
+        "GT": {
+            "rooms_seats": "70"
+        }
+    },
+    "OPTIONS": {
+      "COLUMNS": [
+        "rooms_address"
+      ]
+    }
+  },
+  "isQueryValid": false,
+  "result": "InsightError"
+}

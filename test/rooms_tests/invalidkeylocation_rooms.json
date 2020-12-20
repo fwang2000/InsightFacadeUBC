@@ -1,0 +1,19 @@
+{
+    "title": "Order key not in Columns",
+    "query": {
+        "WHERE": {
+            "GT": {
+                "rooms_lat": 97
+            }
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "rooms_fullname",
+                "rooms_address"
+            ],
+            "ORDER": "rooms_shortname"
+        }
+    },
+    "isQueryValid": false,
+    "result": "InsightError"
+}

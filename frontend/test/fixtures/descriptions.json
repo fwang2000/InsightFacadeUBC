@@ -1,0 +1,8 @@
+{
+    "query1": "simple query IS comparison for department with two columns and old order syntax",
+    "usingAllPartsOfForm": "query using all parts of the form on campus explorer",
+    "usingAllPartsOfFormUsingANY": "query using all parts of the form and the condition ANY",
+    "emptyWhere": "empty where clause {}",
+    "emptyColumns": "empty columns array",
+    "emptyEverything": "did not select a single option",
+}

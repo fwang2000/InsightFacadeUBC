@@ -1,0 +1,15 @@
+{
+  "title": "where as an array",
+  "query": {
+    "WHERE": [],
+    "OPTIONS": [
+      {
+        "COLUMNS": [
+          "rooms_seats"
+        ]
+      }
+    ]
+  },
+  "isQueryValid": false,
+  "result": "InsightError"
+}

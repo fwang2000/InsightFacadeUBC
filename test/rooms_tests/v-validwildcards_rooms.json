@@ -1,0 +1,67 @@
+{
+  "title": "valid wildcard tests",
+    "query": {
+        "WHERE": {
+            "OR": [
+                {
+                    "AND": [
+                        {
+                            "IS": {
+                                "rooms_shortname": "*G"
+                            }
+                        },
+                        {
+                            "IS": {
+                                "rooms_address": "1*"
+                            }
+                        },
+                        {
+                            "IS": {
+                                "rooms_number": "*"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "IS": {
+                        "rooms_href": "*WOOD*"
+                    }
+                }
+            ]
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "rooms_name"
+            ]
+        }
+    },
+  "isQueryValid": true,
+   
+    "result": [
+        { "rooms_name": "GEOG_100" },
+        { "rooms_name": "GEOG_101" },
+        { "rooms_name": "GEOG_147" },
+        { "rooms_name": "GEOG_200" },
+        { "rooms_name": "GEOG_201" },
+        { "rooms_name": "GEOG_212" },
+        { "rooms_name": "GEOG_214" },
+        { "rooms_name": "GEOG_242" },
+        { "rooms_name": "WOOD_1" },
+        { "rooms_name": "WOOD_2" },
+        { "rooms_name": "WOOD_3" },
+        { "rooms_name": "WOOD_4" },
+        { "rooms_name": "WOOD_5" },
+        { "rooms_name": "WOOD_6" },
+        { "rooms_name": "WOOD_B75" },
+        { "rooms_name": "WOOD_B79" },
+        { "rooms_name": "WOOD_G41" },
+        { "rooms_name": "WOOD_G44" },
+        { "rooms_name": "WOOD_G53" },
+        { "rooms_name": "WOOD_G55" },
+        { "rooms_name": "WOOD_G57" },
+        { "rooms_name": "WOOD_G59" },
+        { "rooms_name": "WOOD_G65" },
+        { "rooms_name": "WOOD_G66" }
+    ]
+   
+}

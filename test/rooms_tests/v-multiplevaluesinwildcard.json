@@ -1,0 +1,56 @@
+{
+  "title": "valid wildcard tests - multiple values between wildcards",
+    "query": {
+        "WHERE": {
+            "IS": {
+                "rooms_name": "*AT*"
+            }
+        },
+        "OPTIONS": {
+            "COLUMNS": [
+                "rooms_shortname",
+                "rooms_address"
+            ],
+            "ORDER": "rooms_shortname"
+        }
+    },
+  "isQueryValid": true,
+        "result": [
+            {
+                "rooms_shortname": "MATH",
+                "rooms_address": "1984 Mathematics Road"
+            },
+            {
+                "rooms_shortname": "MATH",
+                "rooms_address": "1984 Mathematics Road"
+            },
+            {
+                "rooms_shortname": "MATH",
+                "rooms_address": "1984 Mathematics Road"
+            },
+            {
+                "rooms_shortname": "MATH",
+                "rooms_address": "1984 Mathematics Road"
+            },
+            {
+                "rooms_shortname": "MATH",
+                "rooms_address": "1984 Mathematics Road"
+            },
+            {
+                "rooms_shortname": "MATH",
+                "rooms_address": "1984 Mathematics Road"
+            },
+            {
+                "rooms_shortname": "MATH",
+                "rooms_address": "1984 Mathematics Road"
+            },
+            {
+                "rooms_shortname": "MATH",
+                "rooms_address": "1984 Mathematics Road"
+            },
+            {
+                "rooms_shortname": "MATX",
+                "rooms_address": "1986 Mathematics Road"
+            }
+        ]
+}
