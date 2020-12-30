@@ -1,36 +1,9 @@
 # CPSC 310 Project Repository
 
-This repository contains starter code for the class project.
-Please keep your repository private.
+UBC is a big place, and involves a large number of people doing a variety of tasks. The goal of this project is to provide a way to perform some of the tasks required to run the university and to enable effective querying of the metadata from around campus. This will involve working with courses, prerequisites, past course averages, room scheduling, and timetable creation.
 
-For information about the project, autotest, and the checkpoints, see the [course webpage](https://sites.google.com/view/ubc-cpsc310-20w1-intro-to-se).
+This will be a full stack web development project split into four sprints. The first three sprints are server-side development using Node. The fourth sprint is client-side development.
 
-## Configuring your environment
+Development will be done with TypeScript and the packages and libraries you use will be strictly limited (for the first three sprints). If you do not know TypeScript, you are encouraged to start investigating the language soon. Its syntax is extremely similar to Java so it should be relatively easy to transition to given your prior experience. It is important to note we will spend very little time in lecture and lab teaching this language; you will be expected to learn it on your own time.
 
-To start using this project, you need to get your computer configured so you can build and execute the code.
-To do this, follow these steps; the specifics of each step (especially the first two) will vary based on which operating system your computer has:
-
-1. [Install git](https://git-scm.com/downloads) (v2.X). After installing you should be able to execute `git --version` on the command line.
-
-1. [Install Node](https://nodejs.org/en/download/current/) (v14.9.X), which will also install NPM (you should be able to execute `node --version` and `npm --version` on the command line).
-
-1. [Install Yarn](https://yarnpkg.com/en/docs/install) (v1.22+). You should be able to execute `yarn --version` afterwards.
-
-1. Clone your repository by running `git clone REPO_URL` from the command line. You can get the REPO_URL by clicking on the green button on your project repository page on GitHub. Note that due to new department changes you can no longer access private git resources using https and a username and password. You will need to use either [an access token](https://help.github.com/en/github/authenticating-to-github/creating-a-personal-access-token-for-the-command-line) or [SSH](https://help.github.com/en/github/authenticating-to-github/adding-a-new-ssh-key-to-your-github-account).
-
-## Project commands
-
-Once your environment is configured you need to further prepare the project's tooling and dependencies.
-In the project folder:
-
-1. `yarn install` to download the packages specified in your project's *package.json* to the *node_modules* directory.
-
-1. `yarn build` to compile your project. You must run this command after making changes to your TypeScript files.
-
-1. `yarn test` to run the test suite.
-
-1. `yarn pretty` to prettify your project code.
-
-## Running and testing from an IDE
-
-WebStorm should be automatically configured the first time you open the project (WebStorm is a free download through their students program)
+All checkpoints will be marked using an automated test suite. The feedback you will receive from this suite will be limited. To succeed at the project you will need to create your own private test suite to further validate each deliverable. Additional details will be available on the AutoTest page.
